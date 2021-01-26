@@ -71,6 +71,7 @@ body {
   height: 100vh;
   width: 100%;
   color: white;
+  padding: 10%;
 }
 
 .header__ul {
@@ -91,23 +92,37 @@ body {
 }
 
 .header__ul li:first-child {
-  margin-left: 0;
+  margin-left: -11%;
 }
 
 .para1 {
   margin-bottom: -10%;
-  margin-left: 12%;
   font-weight: 600;
 }
 
 .head1 {
   font-size: 350%;
-  margin-left: 12%;
-  white-space: nowrap;
 }
 
 .para2 {
   margin-top: -5%;
-  margin-left: 12%;
   font-weight: 600;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  color:white;
+  padding: 8px 25px;
+  text-decoration: none;
+}
+
+.btn-portfolio {
+  border: 1px solid white;
+  border-radius: 23px;
+}
+
+.btn-contact{
+  border: 1px solid white;
+  border-radius: 23px;
 }
