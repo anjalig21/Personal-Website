@@ -1,5 +1,5 @@
 ## My Personal Website
-This is my personal website where I showcase some of my projects and more information about me!
+This is my personal website in progress where I will showcase some of my projects and more information about me!
 
 ## Technologies Used
 - Node.js
