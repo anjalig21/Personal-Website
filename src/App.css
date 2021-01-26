@@ -23,3 +23,73 @@ body {
   position: fixed;
   background: #1f2235;
 }
+
+.navbar__container {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__left-logo img {
+  width: 110px;
+}
+
+.navbar__right {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar__right li a {
+  text-decoration: none;
+  color:white;
+  font-weight: 550;
+  font-size: 18px;
+  padding: 0 15px;
+}
+
+/* Helpers */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid System */
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.col-1 {
+  width: 50%;
+}
+
+/* header */
+.header__content {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  color: white;
+}
+
+.header__ul {
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.header__ul li {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.header__ul li:first-child {
+  margin-left: 0;
+}
