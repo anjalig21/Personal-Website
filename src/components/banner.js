@@ -21,9 +21,9 @@ const banner = () => {
                                         <FaMailBulk />
                                     </li>
                                 </ul>
-                                <p> Hello! My name is, </p>
-                                <h1> Anjali Gupta </h1>
-                                <p> And I love to code!</p>
+                                    <p className = "para1"> Hello! My name is, </p>
+                                    <h1 className = "head1"> Anjali Gupta </h1>
+                                    <p className = "para2"> And I love to code! </p>
                             </div>
                         </div>
                     </div>
