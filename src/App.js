@@ -11,8 +11,8 @@ function App() {
     <div>
       <Particle />
       <Banner />
-      <Navbar />
       <Skills />
+      <Navbar />
     </div>
   );
 }

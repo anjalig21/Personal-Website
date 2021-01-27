@@ -1,0 +1,26 @@
+.skills {
+    background: white;
+    color:  #0644A3;
+}
+
+.common {
+    width: 50%;
+    margin: 4% auto;
+    text-align: center;
+}
+
+.mainHeader {
+    margin-top: -4%;
+    font-size: 300%;
+}
+
+.mainContent {
+    margin-top: -5%;
+}
+
+.commonBorder {
+    background: rgb(19, 18, 18);
+    width: 85px;
+    height: 3px;
+    margin: 10px auto;
+}
