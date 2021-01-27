@@ -3,7 +3,7 @@ import React from 'react';
 // File Imports
 import my_logo from '../images/anjali.png';
 
-const navbar = () => {
+const Navbar = () => {
     return (
         <navbar className = "navbar">
             <div className = "container">
@@ -21,10 +21,12 @@ const navbar = () => {
                         <li> <a href = "" >Blog</a></li>
                         <li> <a href = "" >Contact</a></li>
                     </ul>
+
+                    <div className = "space"></div>
                 </div>
             </div>
         </navbar>
     )
 }
 
-export default navbar
+export default Navbar

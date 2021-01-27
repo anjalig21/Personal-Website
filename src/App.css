@@ -14,6 +14,7 @@ body {
   background: url("https://buffer.com/library/content/images/library/wp-content/uploads/2016/06/giphy.gif");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .navbar {
@@ -50,7 +51,6 @@ body {
 
 /* Helpers */
 .container {
-  width: 1200px;
   margin: 0 auto;
 }
 
@@ -98,15 +98,17 @@ body {
 .para1 {
   margin-bottom: -10%;
   font-weight: 600;
+  font-size: 150%;
 }
 
 .head1 {
-  font-size: 350%;
+  font-size: 450%;
 }
 
 .para2 {
   margin-top: -5%;
   font-weight: 600;
+  font-size: 150%;
 }
 
 .btn {
@@ -125,4 +127,15 @@ body {
 .btn-contact{
   border: 1px solid white;
   border-radius: 23px;
+}
+
+.banner__img img{
+  padding: 0 0;
+  margin-top: 150px;
+  width: 100%;
+  height: 100%;
+}
+
+.space {
+  margin-right: -35%;
 }
