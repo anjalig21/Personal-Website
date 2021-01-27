@@ -1,4 +1,5 @@
 import React from 'react';
+import '../CSS/banner.css';
 import {FaGithub, FaLinkedin, FaLightbulb, FaBlog} from "react-icons/fa";
 import {BsFillPersonFill} from "react-icons/bs"
 

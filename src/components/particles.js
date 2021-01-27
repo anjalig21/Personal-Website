@@ -1,3 +1,4 @@
+import '../CSS/particles.css';
 import Particles from "react-tsparticles";
 
 const Particle = () => {

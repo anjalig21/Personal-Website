@@ -1,4 +1,5 @@
 import React from 'react';
+import '../CSS/navbar.css';
 
 // File Imports
 import my_logo from '../images/anjali.png';
