@@ -24,3 +24,52 @@
     height: 3px;
     margin: 10px auto;
 }
+
+.Skill-bars {
+    padding: 6%;
+    margin-left: 50%;
+    margin-top: -5%;
+}
+
+.row-2 {
+    width: 33.3333333333333%;
+}
+
+.skillsbox {
+    padding: 4%;
+    background: #2573A6;
+    color: white;
+    margin-left: 15%;
+    margin-top: -111%;
+    width: 55%;
+}
+
+.icons {
+    font-size: 30px;
+    margin-bottom: 2%;
+    color: white;
+}
+
+.skillsbox_header {
+    font-size: 18px;
+    font-weight: 501;
+    margin-bottom: 3%;
+}
+
+.skillsbox_para {
+    font-size: 14px;
+}
+
+.row-2-2 {
+    width: 33.3333333333333%;
+}
+
+.skillsbox-2 {
+    padding: 4%;
+    background: #2573A6;
+    color: white;
+    margin-left: 85%;
+    margin-top: -40.5%;
+    width: 55%;
+}
+
