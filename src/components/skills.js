@@ -2,7 +2,9 @@ import React from 'react'
 import '../CSS/skills.css';
 import SkillBar from 'react-skillbars';
 import {GoGear} from 'react-icons/go';
-import {GrTechnology} from 'react-icons/gr';
+import {FaDatabase} from 'react-icons/fa';
+import {AiOutlineAntDesign} from 'react-icons/ai';
+import {GiSkills} from 'react-icons/gi';
 
 const Skills = () => {
     const skills = [
@@ -50,12 +52,38 @@ const Skills = () => {
                     <div className = "col-2-2">
                         <div className = "row-2-2">
                             <div className = "skillsbox-2">
-                                <GrTechnology className = "icons"/>
+                                <FaDatabase className = "icons"/>
                                 <div className = "skillsbox_header">
                                     Tools & Technologies
                                 </div>
                                 <div className = "skillsbox_para">
-                                    I am fluent with using VS Code, Socket.io, Material-UI, GitHub, GitHub Pages, Git, and Netlify!
+                                    I am proficient with using VS Code, Socket.io, Material-UI, GitHub, Git, and Netlify!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className = "row-2-3">
+                            <div className = "skillsbox-3">
+                                <AiOutlineAntDesign className = "icons"/>
+                                <div className = "skillsbox_header">
+                                    Design
+                                </div>
+                                <div className = "skillsbox_para">
+                                    I am comfortable with using Photoshop, ProCreate, Apple Pages, and Microsoft Office!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className = "row-2-4">
+                            <div className = "skillsbox-4">
+                                <GiSkills className = "icons"/>
+                                <div className = "skillsbox_header">
+                                    Professional
+                                </div>
+                                <div className = "skillsbox_para">
+                                    Other than my technical skills, I am a great public speaker, a fast learner and a great team-player!
                                 </div>
                             </div>
                         </div>
