@@ -4,8 +4,8 @@ import Particles from "react-tsparticles";
 const Particle = () => {
       return (
         <Particles
-          id="tsparticles"
-          options={{
+          id = "tsparticles"
+          options= {{
             background: {
               color: {
                 value: "#0d47a1",
@@ -60,7 +60,7 @@ const Particle = () => {
                 enable: true,
                 outMode: "bounce",
                 random: false,
-                speed: 6,
+                speed: 8,
                 straight: false,
               },
               number: {
