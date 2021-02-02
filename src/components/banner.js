@@ -1,57 +1,72 @@
 import React from 'react';
 import '../CSS/banner.css';
-import {FaGithub, FaLinkedin, FaLightbulb, FaBlog} from "react-icons/fa";
-import {BsFillPersonFill} from "react-icons/bs"
+import { FaGithub, FaLinkedin, FaLightbulb, FaBlog } from "react-icons/fa";
+import { BsFillPersonFill } from "react-icons/bs"
+import Typewriter from 'typewriter-effect';
+import { useHistory } from 'react-router-dom';
 
 // File Imports
 import my_photo from '../images/me.png';
 
-
 const Banner = () => {
-    const [state] = React.useState({title: "Anjali Gupta", text1:"Hello! \
-    My name is,", text2: "And I love to code!"})
+    const [state] = React.useState({
+        title: "Anjali Gupta", text1: "Hello! \
+    My name is,", text2: "And I am a"
+    })
+
     return (
-        <header className = "header">
-            <div className = "container">
-                <div className = "row">
+        <header className="header">
+            <div className="container">
+                <div className="row">
                     <div className="col-1">
                         <div className="header__content">
                             <div className="header__section">
                                 <ul className="header__ul">
-                                    <li>
+                                    <li className = "Button">
                                         <FaGithub />
                                     </li>
-                                    <li>
+                                    <li className = "Button">
                                         <FaLinkedin />
                                     </li>
-                                    <li>
+                                    <li className = "Button">
                                         <BsFillPersonFill />
                                     </li>
-                                    <li>
+                                    <li className = "Button">
                                         <FaLightbulb />
                                     </li>
-                                    <li>
+                                    <li className = "Button">
                                         <FaBlog />
                                     </li>
                                 </ul>
-                                <p className = "para1"> {state.text1} </p>
-                                <h1 className = "head1"> {state.title} </h1>
-                                <p className = "para2"> {state.text2} </p>
-                                <div className = "header__buttons">
-                                    <a href = "" className = "btn btn-portfolio"> 
-                                        My Portfolio 
-                                    </a> 
+                                <p className="para1"> {state.text1} </p>
+                                <h1 className="head1"> {state.title} </h1>
+                                <div className="information">
+                                    <p className="para2"> {state.text2}&nbsp;</p>
+                                    <div className="typewriter">
+                                        <Typewriter
+                                            options={{
+                                                strings: ['Developer', 'Technology Enthusiast', 'Designer'],
+                                                autoStart: true,
+                                                loop: true,
+                                            }}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="header__buttons">
+                                    <a href="" className="btn btn-portfolio">
+                                        My Portfolio
+                                    </a>
                                     &nbsp;&nbsp;&nbsp;
-                                    <a href = "" className = "btn btn-contact">
+                                    <a href="" className="btn btn-contact">
                                         Contact Me
-                                    </a> 
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className = "col-1">
-                        <div className = "banner__img">
-                            <img src = {my_photo} alt = "photo of me" />
+                    <div className="col-1">
+                        <div className="banner__img">
+                            <img src={my_photo} alt="photo of me" />
                         </div>
                     </div>
                 </div>

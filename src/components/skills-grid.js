@@ -1,5 +1,4 @@
-import React from 'react'
-import { makeStyles } from '@material-ui/styles'
+import React from 'react';
 import { Grid, Typography, Card, CardContent} from '@material-ui/core';
 import '../CSS/skills.css';
 import { GoGear } from 'react-icons/go';
@@ -7,48 +6,7 @@ import { FaDatabase } from 'react-icons/fa';
 import { AiOutlineAntDesign } from 'react-icons/ai';
 import { GiSkills } from 'react-icons/gi';
 import SkillBar from 'react-skillbars';
-
-    const skills = [
-        { type: "Python", level: 95 },
-        { type: "HTML", level: 95 },
-        { type: "CSS", level: 90 },
-        { type: "Javascript", level: 90 },
-        { type: "SQL", level: 85 },
-        { type: "C", level: 85 },
-        { type: "C++", level: 80 },
-        { type: "Racket", level: 80 }
-    ];
-    const colors = {
-        "bar": "#3498db",
-        "title": {
-            "text": "#fff",
-            "background": "#2980b9"
-        }
-    }
-
-const useStyles = makeStyles((theme) => ({
-    container: {
-        backgroundColor: "#2573A6",
-    },
-    header: {
-        fontFamily: "Poppins",
-        fontSize: "115%",
-        color: "white",
-        fontWeight: "501"
-    },
-    body: {
-        fontFamily: "Poppins",
-        color: "white",
-        fontSize: "85%"
-    },
-    icon: {
-        color: "white",
-        fontSize: "200%"
-    },
-    padding: {
-        paddingLeft: "5%"
-    }
-}));
+import {useStyles, skills, colors} from './styles.js'
 
 const Skillsgrid = () => {
     const classes = useStyles();
@@ -68,7 +26,7 @@ const Skillsgrid = () => {
                         <CardContent>
                             <GoGear className={classes.icon} />
                             <Typography className={classes.header} gutterBottom>
-                                Libraries & Frameworks
+                                Technologies
                         </Typography>
                             <Typography className={classes.body}>
                                 I am fluent with using TensorFlow, NumPy, Django, Node.js, React.js, and SQLite!
@@ -81,10 +39,10 @@ const Skillsgrid = () => {
                         <CardContent>
                             <FaDatabase className={classes.icon} />
                             <Typography className={classes.header} gutterBottom>
-                                Tools & Technologies
+                                Tools
                         </Typography>
                             <Typography className={classes.body}>
-                                I am proficient with using VS Code, Socket.io, Material-UI, GitHub, Git, and Netlify!
+                                I am proficient with using Visual Studio Code, Socket.io, Material-UI, GitHub, Git, and Netlify!
                         </Typography>
                         </CardContent>
                     </Card>
