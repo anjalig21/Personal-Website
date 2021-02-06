@@ -1,0 +1,22 @@
+.projects {
+    background-color: #2573A6;
+}
+
+.mainHeaderProjects {
+    color: white;
+    font-size: 300%;
+    line-height: 10%;
+    text-align: center;
+}
+
+.mainContentProjects {
+    color:  white;
+    text-align: center;
+}
+
+.commonBorderProjects {
+    background: rgb(19, 18, 18);
+    width: 85px;
+    height: 3px;
+    margin: 10px auto;
+}

@@ -3,6 +3,11 @@
     margin-left: 10%;
 }
 
+.mainGrid {
+    padding-bottom: 1%;
+    z-index: -3;
+}
+
 .common {
     width: 50%;
     margin: 4% auto;
@@ -26,6 +31,10 @@
     width: 85px;
     height: 3px;
     margin: 10px auto;
+}
+
+.skillBars {
+    margin-top: -5%;
 }
 
 .Skill-bars {

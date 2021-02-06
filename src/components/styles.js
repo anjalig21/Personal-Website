@@ -5,8 +5,16 @@ export const useStyles = makeStyles((theme) => ({
     container: {
         backgroundColor: "#2573A6",
         width: "100%",
-        height: "90%"
+        height: "95%",
     },
+
+    container2: {
+        backgroundColor: "#2573A6",
+        width: "100%",
+        height: "95%",
+        marginTop: "-1%"
+    },
+
     header: {
         fontFamily: "Poppins",
         fontSize: "115%",

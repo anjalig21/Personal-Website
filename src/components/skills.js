@@ -11,7 +11,7 @@ import {useStyles, skills, colors} from './styles.js'
 const Skillsgrid = () => {
     const classes = useStyles();
     return (
-        <Grid container direction={'row'} spacing={1}>
+        <Grid className="mainGrid" container direction={'row'} spacing={1}>
             <Grid item xs={12}>
                 &nbsp;
                 <h1 className="mainHeader">My Skills</h1>
@@ -49,7 +49,7 @@ const Skillsgrid = () => {
                 </Grid>
                 <div className={classes.padding} />
                 <Grid item xs={5}>
-                    <Card variant="outlined" className={classes.container}>
+                    <Card variant="outlined" className={classes.container2}>
                         <CardContent>
                             <AiOutlineAntDesign className={classes.icon} />
                             <Typography className={classes.header} gutterBottom>
@@ -62,7 +62,7 @@ const Skillsgrid = () => {
                     </Card>
                 </Grid>
                 <Grid item xs={5}>
-                    <Card variant="outlined" className={classes.container}>
+                    <Card variant="outlined" className={classes.container2}>
                         <CardContent>
                             <GiSkills className={classes.icon} />
                             <Typography className={classes.header} gutterBottom>
