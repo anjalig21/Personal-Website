@@ -5,7 +5,6 @@ import Navbar from "./components/navbar";
 import Particle from "./components/particles"
 import Skills from "./components/skills"
 import Projects from "./components/projects"
-import Carousels from "./components/carousels";
 
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
       <Banner />
       <Skills />
       <Projects />
-      <Carousels />
     </div>
   );
 }

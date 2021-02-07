@@ -3,16 +3,13 @@ import '../CSS/banner.css';
 import { FaGithub, FaLinkedin, FaLightbulb, FaBlog } from "react-icons/fa";
 import { BsFillPersonFill } from "react-icons/bs"
 import Typewriter from 'typewriter-effect';
-import { useHistory } from 'react-router-dom';
 
 // File Imports
 import my_photo from '../images/me.png';
 
 const Banner = () => {
     const [state] = React.useState({
-        title: "Anjali Gupta", text1: "Hello! \
-    My name is,", text2: "And I am a"
-    })
+        title: "Anjali Gupta", text1: "Hello! My name is,", text2: "And I am a"})
 
     return (
         <header className="header">

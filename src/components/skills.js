@@ -76,7 +76,7 @@ const Skillsgrid = () => {
                 </Grid>
             </Grid>
             <Grid item xs={5}>
-                <SkillBar skills={skills} colors={colors} />
+                <SkillBar skillBar = {classes.skillBar} skills={skills} colors={colors} />
             </Grid>
         </Grid>
     )
