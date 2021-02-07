@@ -1,18 +1,20 @@
 import React from 'react'
-import { Grid, IconButton } from '@material-ui/core';
+import { Grid, IconButton, Grow } from '@material-ui/core';
 import '../CSS/projects.css';
 import ImgMediaCard from "./carousels.js"
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import webcamPainter from "../images/webcam_painter.gif";
 import photoBot from "../images/photobot.gif";
 import climateBots from "../images/climatebots.gif";
-import shapeDetect from "../images/shapes.gif";
+import shapeDetect from "../images/contours.gif";
 
 const Projects = () => {
     const [state, setState] = React.useState(0);
     var counter = 0;
     const changeStateLeft = (event, newValue) => {
-        setState((state - 1) % 3);
+        const negativeChange = (((state - 1) % 3) + 3) % 3
+        setState(negativeChange);
+        console.log(state);
     }
     const changeStateRight = (event, newValue) => {
         setState((state + 1) % 3);
@@ -30,7 +32,7 @@ const Projects = () => {
                 <Grid item container xs={1} direction={'column'}>
                     <Grid item xs={5}></Grid>
                     <Grid item xs={2}>
-                        <IconButton id="1" onClick={changeStateLeft} className="buttonArrow" color="primary" aria-label="arrow left">
+                        <IconButton onClick={changeStateLeft} className="buttonArrow" color="primary" aria-label="arrow left">
                             <BsChevronLeft />
                         </IconButton>
                     </Grid>
@@ -38,11 +40,11 @@ const Projects = () => {
                 <Grid item container xs={10} spacing={0}>
                     <Grid item xs={4}>
                         {state == 0 &&
-                            <ImgMediaCard
-                                demo={climateBots}
-                                demoTitle={"Climate Bots"}
-                                demoDetails={"Made a web application with Django."}
-                            />
+                                <ImgMediaCard
+                                    demo={climateBots}
+                                    demoTitle={"Climate Bots"}
+                                    demoDetails={"Made a web application with Django."}
+                                />
                         }
                         {state == 1 &&
                             <ImgMediaCard
