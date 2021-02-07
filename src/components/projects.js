@@ -5,6 +5,8 @@ import ImgMediaCard from "./carousels.js"
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import webcamPainter from "../images/webcam_painter.gif";
 import photoBot from "../images/photobot.gif";
+import climateBots from "../images/climatebots.gif";
+import shapeDetect from "../images/shapes.gif";
 
 const Projects = () => {
     const [state, setState] = React.useState(0);
@@ -37,15 +39,15 @@ const Projects = () => {
                     <Grid item xs={4}>
                         {state == 0 &&
                             <ImgMediaCard
-                                demo={webcamPainter}
-                                demoTitle={"Webcam Painter"}
-                                demoDetails={"Made with OpenCV."}
+                                demo={climateBots}
+                                demoTitle={"Climate Bots"}
+                                demoDetails={"Made a web application with Django."}
                             />
                         }
                         {state == 1 &&
                             <ImgMediaCard
-                                demo={webcamPainter}
-                                demoTitle={"Webcam Painter"}
+                                demo={shapeDetect}
+                                demoTitle={"Shape Detection"}
                                 demoDetails={"Made with OpenCV."}
                             />
                         }
