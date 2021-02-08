@@ -47,21 +47,21 @@ const Projects = () => {
                 <Grid item container xs={10} spacing={0}>
                     <Grow in={grow}>
                         <Grid item xs={4}>
-                            {state == 0 &&
+                            {state === 0 &&
                                 <ImgMediaCard
                                     demo={climateBots}
                                     demoTitle={"Climate Bots"}
                                     demoDetails={"Made a web application with Django."}
                                 />
                             }
-                            {state == 1 &&
+                            {state === 1 &&
                                 <ImgMediaCard
                                     demo={shapeDetect}
                                     demoTitle={"Shape Detection"}
                                     demoDetails={"Made with OpenCV."}
                                 />
                             }
-                            {state == 2 &&
+                            {state === 2 &&
                                 <ImgMediaCard
                                     demo={webcamPainter}
                                     demoTitle={"Webcam Painter"}
@@ -72,21 +72,21 @@ const Projects = () => {
                     </Grow>
                     <Grow in={grow}>
                         <Grid item xs={4}>
-                            {state == 0 &&
+                            {state === 0 &&
                                 <ImgMediaCard
                                     demo={photoBot}
                                     demoTitle={"Photo Bot"}
                                     demoDetails={"Made with Node.js."}
                                 />
                             }
-                            {state == 1 &&
+                            {state === 1 &&
                                 <ImgMediaCard
                                     demo={webcamPainter}
                                     demoTitle={"Webcam Painter"}
                                     demoDetails={"Made with OpenCV."}
                                 />
                             }
-                            {state == 2 &&
+                            {state === 2 &&
                                 <ImgMediaCard
                                     demo={webcamPainter}
                                     demoTitle={"Webcam Painter"}
@@ -97,21 +97,21 @@ const Projects = () => {
                     </Grow>
                     <Grow in={grow}>
                         <Grid item xs={4}>
-                            {state == 0 &&
+                            {state === 0 &&
                                 <ImgMediaCard
                                     demo={webcamPainter}
                                     demoTitle={"Webcam Painter"}
                                     demoDetails={"Made with OpenCV."}
                                 />
                             }
-                            {state == 1 &&
+                            {state === 1 &&
                                 <ImgMediaCard
                                     demo={webcamPainter}
                                     demoTitle={"Webcam Painter"}
                                     demoDetails={"Made with OpenCV."}
                                 />
                             }
-                            {state == 2 &&
+                            {state === 2 &&
                                 <ImgMediaCard
                                     demo={webcamPainter}
                                     demoTitle={"Webcam Painter"}
@@ -129,6 +129,11 @@ const Projects = () => {
                         </IconButton>
                     </Grid>
                 </Grid>
+            </Grid>
+            <Grid item xs={12}>
+                <br></br>
+                <br></br>
+                <br></br>
             </Grid>
         </Grid>
     )
