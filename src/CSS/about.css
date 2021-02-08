@@ -1,0 +1,20 @@
+.mainHeaderProjects {
+    color: #0644A3;
+    font-size: 300%;
+    line-height: 10%;
+    text-align: center;
+    margin-left: -4%;
+}
+
+.mainContentProjects {
+    color:  #0644A3;
+    text-align: center;
+    margin-left: -4%;
+}
+
+.commonBorderProjects {
+    background: rgb(19, 18, 18);
+    width: 85px;
+    height: 3px;
+    margin-left: 44.5%;
+}

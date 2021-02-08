@@ -5,6 +5,7 @@ import Navbar from "./components/navbar";
 import Particle from "./components/particles"
 import Skills from "./components/skills"
 import Projects from "./components/projects"
+import About from "./components/about"
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Banner />
       <Skills />
       <Projects />
+      <About />
     </div>
   );
 }
