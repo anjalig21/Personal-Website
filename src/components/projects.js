@@ -10,14 +10,21 @@ import shapeDetect from "../images/contours.gif";
 
 const Projects = () => {
     const [state, setState] = React.useState(0);
-    var counter = 0;
+    const [grow, setGrow] = React.useState(true);
     const changeStateLeft = (event, newValue) => {
         const negativeChange = (((state - 1) % 3) + 3) % 3
-        setState(negativeChange);
-        console.log(state);
+        setGrow(false);
+        setTimeout(() => {
+            setState(negativeChange);
+            setGrow(true);
+        }, 500);
     }
     const changeStateRight = (event, newValue) => {
-        setState((state + 1) % 3);
+        setGrow(false);
+        setTimeout(() => {
+            setState((state + 1) % 3);
+            setGrow(true);
+        }, 500);
     }
     return (
         <Grid className="projects" container direction={'row'} spacing={1}>
@@ -38,75 +45,81 @@ const Projects = () => {
                     </Grid>
                 </Grid>
                 <Grid item container xs={10} spacing={0}>
-                    <Grid item xs={4}>
-                        {state == 0 &&
+                    <Grow in={grow}>
+                        <Grid item xs={4}>
+                            {state == 0 &&
                                 <ImgMediaCard
                                     demo={climateBots}
                                     demoTitle={"Climate Bots"}
                                     demoDetails={"Made a web application with Django."}
                                 />
-                        }
-                        {state == 1 &&
-                            <ImgMediaCard
-                                demo={shapeDetect}
-                                demoTitle={"Shape Detection"}
-                                demoDetails={"Made with OpenCV."}
-                            />
-                        }
-                        {state == 2 &&
-                            <ImgMediaCard
-                                demo={webcamPainter}
-                                demoTitle={"Webcam Painter"}
-                                demoDetails={"Made with OpenCV."}
-                            />
-                        }
-                    </Grid>
-                    <Grid item xs={4}>
-                        {state == 0 &&
-                            <ImgMediaCard
-                                demo={photoBot}
-                                demoTitle={"Photo Bot"}
-                                demoDetails={"Made with Node.js."}
-                            />
-                        }
-                        {state == 1 &&
-                            <ImgMediaCard
-                                demo={webcamPainter}
-                                demoTitle={"Webcam Painter"}
-                                demoDetails={"Made with OpenCV."}
-                            />
-                        }
-                        {state == 2 &&
-                            <ImgMediaCard
-                                demo={webcamPainter}
-                                demoTitle={"Webcam Painter"}
-                                demoDetails={"Made with OpenCV."}
-                            />
-                        }
-                    </Grid>
-                    <Grid item xs={4}>
-                        {state == 0 &&
-                            <ImgMediaCard
-                                demo={webcamPainter}
-                                demoTitle={"Webcam Painter"}
-                                demoDetails={"Made with OpenCV."}
-                            />
-                        }
-                        {state == 1 &&
-                            <ImgMediaCard
-                                demo={webcamPainter}
-                                demoTitle={"Webcam Painter"}
-                                demoDetails={"Made with OpenCV."}
-                            />
-                        }
-                        {state == 2 &&
-                            <ImgMediaCard
-                                demo={webcamPainter}
-                                demoTitle={"Webcam Painter"}
-                                demoDetails={"Made with OpenCV."}
-                            />
-                        }
-                    </Grid>
+                            }
+                            {state == 1 &&
+                                <ImgMediaCard
+                                    demo={shapeDetect}
+                                    demoTitle={"Shape Detection"}
+                                    demoDetails={"Made with OpenCV."}
+                                />
+                            }
+                            {state == 2 &&
+                                <ImgMediaCard
+                                    demo={webcamPainter}
+                                    demoTitle={"Webcam Painter"}
+                                    demoDetails={"Made with OpenCV."}
+                                />
+                            }
+                        </Grid>
+                    </Grow>
+                    <Grow in={grow}>
+                        <Grid item xs={4}>
+                            {state == 0 &&
+                                <ImgMediaCard
+                                    demo={photoBot}
+                                    demoTitle={"Photo Bot"}
+                                    demoDetails={"Made with Node.js."}
+                                />
+                            }
+                            {state == 1 &&
+                                <ImgMediaCard
+                                    demo={webcamPainter}
+                                    demoTitle={"Webcam Painter"}
+                                    demoDetails={"Made with OpenCV."}
+                                />
+                            }
+                            {state == 2 &&
+                                <ImgMediaCard
+                                    demo={webcamPainter}
+                                    demoTitle={"Webcam Painter"}
+                                    demoDetails={"Made with OpenCV."}
+                                />
+                            }
+                        </Grid>
+                    </Grow>
+                    <Grow in={grow}>
+                        <Grid item xs={4}>
+                            {state == 0 &&
+                                <ImgMediaCard
+                                    demo={webcamPainter}
+                                    demoTitle={"Webcam Painter"}
+                                    demoDetails={"Made with OpenCV."}
+                                />
+                            }
+                            {state == 1 &&
+                                <ImgMediaCard
+                                    demo={webcamPainter}
+                                    demoTitle={"Webcam Painter"}
+                                    demoDetails={"Made with OpenCV."}
+                                />
+                            }
+                            {state == 2 &&
+                                <ImgMediaCard
+                                    demo={webcamPainter}
+                                    demoTitle={"Webcam Painter"}
+                                    demoDetails={"Made with OpenCV."}
+                                />
+                            }
+                        </Grid>
+                    </Grow>
                 </Grid>
                 <Grid item container xs={1} direction={'column'}>
                     <Grid item xs={5}></Grid>
