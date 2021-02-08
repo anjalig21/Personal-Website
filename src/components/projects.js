@@ -51,14 +51,14 @@ const Projects = () => {
                                 <ImgMediaCard
                                     demo={climateBots}
                                     demoTitle={"Climate Bots"}
-                                    demoDetails={"Made a web application with Django."}
+                                    demoDetails={"A social networking platform for individuals to discuss climate change."}
                                 />
                             }
                             {state === 1 &&
                                 <ImgMediaCard
                                     demo={shapeDetect}
                                     demoTitle={"Shape Detection"}
-                                    demoDetails={"Made with OpenCV."}
+                                    demoDetails={"An application that can detect shapes from an image."}
                                 />
                             }
                             {state === 2 &&
@@ -76,7 +76,7 @@ const Projects = () => {
                                 <ImgMediaCard
                                     demo={photoBot}
                                     demoTitle={"Photo Bot"}
-                                    demoDetails={"Made with Node.js."}
+                                    demoDetails={"A multi-purpose Discord Bot curated towards gaming communities."}
                                 />
                             }
                             {state === 1 &&
@@ -101,7 +101,7 @@ const Projects = () => {
                                 <ImgMediaCard
                                     demo={webcamPainter}
                                     demoTitle={"Webcam Painter"}
-                                    demoDetails={"Made with OpenCV."}
+                                    demoDetails={"An application that allows users to draw infront a webcam."}
                                 />
                             }
                             {state === 1 &&

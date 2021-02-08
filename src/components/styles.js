@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/styles'
+import { makeStyles } from '@material-ui/core/styles';
 
 export const useStyles = makeStyles((theme) => ({
     container: {
@@ -13,7 +13,6 @@ export const useStyles = makeStyles((theme) => ({
             backgroundPosition: 'right'
         },
     },
-
     container2: {
         backgroundColor: "#2573A6",
         marginTop: "-3.5%",
@@ -26,7 +25,6 @@ export const useStyles = makeStyles((theme) => ({
             backgroundPosition: 'right'
         },
     },
-
     header: {
         fontFamily: "Poppins",
         fontSize: "115%",
@@ -44,6 +42,12 @@ export const useStyles = makeStyles((theme) => ({
     },
     padding: {
         paddingLeft: "5%"
+    },
+    popover: {
+        pointerEvents: 'none',
+    },
+    paper: {
+        padding: theme.spacing(1),
     },
 }));
 
