@@ -6,7 +6,7 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import webcamPainter from "../images/webcam_painter.gif";
 import photoBot from "../images/photobot.gif";
 import climateBots from "../images/climatebots.gif";
-import shapeDetect from "../images/contours.gif";
+import shapeDetect from "../images/shapes.gif";
 
 const Projects = () => {
     const [state, setState] = React.useState(0);

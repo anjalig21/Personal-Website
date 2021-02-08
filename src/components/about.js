@@ -1,6 +1,6 @@
 import React from 'react';
 import '../CSS/about.css';
-import { Grid} from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 
 const About = () => {
     return (
