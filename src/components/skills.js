@@ -16,7 +16,6 @@ const Skillsgrid = () => {
                 &nbsp;
                 <h1 className="mainHeader">My Skills</h1>
                 <p className="mainContent">- Technical & Design -</p>
-                <div className="commonBorder"></div>
                 &nbsp;
             </Grid>
             <div className={classes.padding} />

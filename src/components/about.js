@@ -26,7 +26,6 @@ const About = () => {
                 &nbsp;
                 <h1 className="mainHeaderProjectsAbout">About Me</h1>
                 <p className="mainContentProjectsAbout">- Get To Know Me! -</p>
-                <div className="commonBorderProjectsAbout"></div>
                 &nbsp;
             </Grid>
             <Grid item xs={5}>

@@ -32,7 +32,6 @@ const Projects = () => {
                 &nbsp;
                 <h1 className="mainHeaderProjects">My Projects</h1>
                 <p className="mainContentProjects">- Featured Projects -</p>
-                <div className="commonBorderProjects"></div>
                 &nbsp;
             </Grid>
             <Grid item container xs={12}>

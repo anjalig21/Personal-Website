@@ -25,13 +25,6 @@
     text-align: center;
 }
 
-.commonBorder {
-    background: rgb(19, 18, 18);
-    width: 85px;
-    height: 3px;
-    margin: 10px auto;
-}
-
 .skillBars {
     margin-top: -5%;
 }
