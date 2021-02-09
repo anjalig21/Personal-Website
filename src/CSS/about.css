@@ -1,27 +1,70 @@
-.mainHeaderProjects {
+.mainHeaderProjectsAbout {
     color: #0644A3;
     font-size: 300%;
     line-height: 10%;
     text-align: center;
-    margin-left: -4%;
+    margin-left: 1%;
 }
 
-.mainContentProjects {
+.mainContentProjectsAbout {
     color:  #0644A3;
     text-align: center;
-    margin-left: -4%;
+    margin-left: 1%;
 }
 
-.commonBorderProjects {
+.commonBorderProjectsAbout {
     background: rgb(19, 18, 18);
     width: 85px;
     height: 3px;
-    margin-left: 44.5%;
+    margin-left: 48%;
 }
 
  .photoMe {
-     width: 70%;
-     height: 95%;
-     padding-left: 14%;
+     width: 75%;
+     height: 94%;
+     margin-top: 4%;
+     margin-left: 14%;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 } 
+
+.textAboutMe1 {
+    font-size: larger;
+    font-weight: 600;
+}
+
+.textAboutMe2 {
+    font-size: larger;
+    font-weight: 600;
+    color: #175fca;
+}
+
+.detailsAboutMe {
+    font-weight: 500;
+    font-size: medium;
+}
+
+.format {
+    margin-top: 4.25%;
+}
+
+.btn-resume {
+    background-color: #175fca;
+    font-size: 120%;
+    outline: none;
+    color: #ffffff;
+    padding: 1% 4%;
+    text-decoration: none;
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:.3s;
+    border: 1px solid #0644A3;
+    border-radius: 20px;
+}
+
+.btn-resume:hover{
+    background-color: #ffffff;
+    color: #175fca;
+  }
 
