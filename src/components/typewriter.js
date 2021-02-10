@@ -15,5 +15,3 @@ const typewriter = () => {
 }
 
 export default typewriter;
-
-
