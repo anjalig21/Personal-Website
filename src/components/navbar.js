@@ -19,7 +19,6 @@ const Navbar = () => {
                         <li> <a className = "headings" href = "" >Skills</a></li>
                         <li> <a className = "headings" href = "" >Projects</a></li>
                         <li> <a className = "headings" href = "" >About</a></li>
-                        <li> <a className = "headings" href = "" >Blog</a></li>
                         <li> <a className = "headings" href = "" >Contact</a></li>
                     </ul>
 
