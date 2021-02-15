@@ -2,8 +2,6 @@ import React from 'react'
 import "../CSS/contact.css"
 import { Grid } from '@material-ui/core';
 import { db } from "../firebase/firebaseConfig";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { AiFillFileWord } from "react-icons/ai";
 
 const Contact = () => {
     const [name, setName] = React.useState("");
@@ -31,19 +29,26 @@ const Contact = () => {
 
     return (
         <Grid className="contact" container direction={'row'}>
-            <Grid item xs={12}>
-                &nbsp;
-            <h1 className="mainHeaderProjectsContact">Contact Me</h1>
-                <p className="mainContentProjectsContact">- Let's Connect! -</p>
-                &nbsp;
+            <Grid item container xs={12}>
+                <Grid item xs={4}></Grid>
+                <Grid item xs={4}>
+                    <br />
+                    <h1 className="mainHeaderProjectsContact">Contact Me</h1>
+                </Grid>
+                <Grid item xs={4}></Grid>
+                <Grid item xs={4}></Grid>
+                <Grid item xs={4}>
+                    <p className="mainContentProjectsContact">- Let's Connect! -</p>
+                    <br />
+                </Grid>
             </Grid>
-            <Grid item xs={3}></Grid>
-            <Grid item xs={7}>
+            <Grid item xs={4}></Grid>
+            <Grid item xs={4}>
                 <form className="form" onSubmit={submitHander}>
                     <label>Name</label>
                     <br />
                     <input
-                        placeholder='Your Name Here'
+                        placeholder='Name'
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                     />
@@ -52,7 +57,7 @@ const Contact = () => {
                     <label>Email</label>
                     <br />
                     <input
-                        placeholder='Your Email Here'
+                        placeholder='Email'
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
@@ -61,12 +66,14 @@ const Contact = () => {
                     <label>Message</label>
                     <br />
                     <textarea
-                        placeholder='Your Message Here'
+                        placeholder='Message'
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                     />
                     <br />
-                    <button type="submit">Submit</button>
+                    <div className="spacing">
+                        <button className="button" type="submit">Submit</button>
+                    </div>
                 </form>
                 <br></br>
             </Grid>

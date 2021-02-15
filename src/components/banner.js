@@ -6,6 +6,7 @@ import Typewriter from 'typewriter-effect';
 
 // File Imports
 import my_photo from '../images/me.png';
+import { Grid } from '@material-ui/core';
 
 const Banner = () => {
     const [state] = React.useState({
@@ -13,8 +14,10 @@ const Banner = () => {
     })
 
     return (
-        <header className="header">
-            <div className="col">
+        <Grid container className="header">
+            <Grid item xs={1}></Grid>
+            <Grid item xs={5}>
+                <br />
                 <div className="header__content">
                     <div className="header__section">
                         <ul className="header__ul">
@@ -51,21 +54,22 @@ const Banner = () => {
                         <div className="header__buttons">
                             <a href="" className="btn btn-portfolio">
                                 My Portfolio
-                            </a>
-                            &nbsp;&nbsp;&nbsp;
-                            <a href="" className="btn btn-contact">
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a href="" className="btn btn-contact">
                                 Contact Me
-                            </a>
+                                    </a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="col">
+            </Grid>
+            <Grid item xs={6}>
+                <br /><br /><br /><br /><br />
                 <div className="banner__img">
                     <img src={my_photo} alt="photo of me" />
                 </div>
-            </div>
-        </header>
+            </Grid>
+        </Grid>
     )
 }
 

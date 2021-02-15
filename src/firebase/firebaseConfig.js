@@ -1,5 +1,4 @@
 import Firebase from "firebase";
-const path = require('path')
 require('dotenv').config();
 
 var firebaseApp = Firebase.initializeApp({

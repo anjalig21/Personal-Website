@@ -11,16 +11,16 @@ import {useStyles, skills, colors} from './styles.js'
 const Skillsgrid = () => {
     const classes = useStyles();
     return (
-        <Grid className="mainGrid" container direction={'row'} spacing={1}>
+        <Grid className="mainGrid" container spacing={6}>
             <Grid item xs={12}>
                 &nbsp;
                 <h1 className="mainHeader">My Skills</h1>
                 <p className="mainContent">- Technical & Design -</p>
                 &nbsp;
             </Grid>
-            <div className={classes.padding} />
-            <Grid container item xs={6} spacing={1}>
-                <Grid item xs={5}>
+            <Grid item xs={1}></Grid>
+            <Grid container item xs={5} spacing={1}>
+                <Grid item xs={6}>
                     <Card variant="outlined" className={classes.container}>
                         <CardContent>
                             <GoGear className={classes.icon} />
@@ -33,7 +33,7 @@ const Skillsgrid = () => {
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item xs={5}>
+                <Grid item xs={6}>
                     <Card variant="outlined" className={classes.container}>
                         <CardContent>
                             <FaDatabase className={classes.icon} />
@@ -46,8 +46,7 @@ const Skillsgrid = () => {
                         </CardContent>
                     </Card>
                 </Grid>
-                <div className={classes.padding} />
-                <Grid item xs={5}>
+                <Grid item xs={6}>
                     <Card variant="outlined" className={classes.container2}>
                         <CardContent>
                             <AiOutlineAntDesign className={classes.icon} />
@@ -60,7 +59,7 @@ const Skillsgrid = () => {
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item xs={5}>
+                <Grid item xs={6}>
                     <Card variant="outlined" className={classes.container2}>
                         <CardContent>
                             <GiSkills className={classes.icon} />
@@ -75,8 +74,10 @@ const Skillsgrid = () => {
                 </Grid>
             </Grid>
             <Grid item xs={5}>
-                <SkillBar skillBar = {classes.skillBar} skills={skills} colors={colors} />
+                <SkillBar  skills={skills} colors={colors} />
             </Grid>
+            <Grid item xs={1}></Grid>
+            <Grid item xs={12}></Grid>
         </Grid>
     )
 }

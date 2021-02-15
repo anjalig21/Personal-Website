@@ -21,13 +21,14 @@ const About = () => {
     const open = Boolean(anchorEl);
 
     return (
-        <Grid className="about" container direction={'row'}>
+        <Grid className="about" container>
             <Grid item xs={12}>
                 &nbsp;
                 <h1 className="mainHeaderProjectsAbout">About Me</h1>
                 <p className="mainContentProjectsAbout">- Get To Know Me! -</p>
                 &nbsp;
             </Grid>
+            <Grid item xs={1}></Grid>
             <Grid item xs={5}>
                 <img className="photoMe"
                     aria-owns={open ? 'mouse-over-popover' : undefined}
@@ -57,7 +58,7 @@ const About = () => {
                     <Typography>Hey there! Check out my resume below!</Typography>
                 </Popover>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={5}>
                 <br></br>
                 <span className="textAboutMe1"> I'm Anjali Gupta and I am a </span>
                 <span className="textAboutMe2">web & software developer.</span>
