@@ -16,7 +16,6 @@ const Skillsgrid = () => {
                 &nbsp;
                 <h1 className="mainHeader">My Skills</h1>
                 <p className="mainContent">- Technical & Design -</p>
-                &nbsp;
             </Grid>
             <Grid item xs={1}></Grid>
             <Grid container item xs={5} spacing={1}>
