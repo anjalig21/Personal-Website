@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Typography, Card, CardContent} from '@material-ui/core';
+import { Grid, Typography, Card, CardContent } from '@material-ui/core';
 import '../CSS/skills.css';
 import { GoGear } from 'react-icons/go';
 import { FaDatabase } from 'react-icons/fa';
@@ -7,13 +7,13 @@ import { AiOutlineAntDesign } from 'react-icons/ai';
 import { GiSkills } from 'react-icons/gi';
 import SkillBar from 'react-skillbars';
 import { useMediaQuery } from '@material-ui/core';
-import {useStyles, skills, colors} from './styles.js'
+import { useStyles, skills, colors } from './styles.js'
 
 const Skillsgrid = () => {
     const classes = useStyles();
 
-    const desktop = useMediaQuery('(min-width: 1100px)');
-    const mobile = useMediaQuery('(max-width: 1100px)');
+    const mobile = useMediaQuery('(max-width: 960px)');
+    const desktop = useMediaQuery('(min-width: 960px)');
 
     return (
         <Grid className="mainGrid" container spacing={6}>
@@ -22,9 +22,10 @@ const Skillsgrid = () => {
                 <h1 className="mainHeader">My Skills</h1>
                 <p className="mainContent">- Technical & Design -</p>
             </Grid>
-            <Grid item xs={1}></Grid>
-            <Grid container item xs={12} sm={5} spacing={1}>
-                <Grid item xs={11} sm={6}>
+            {desktop && <Grid item xs={1}></Grid>}
+            <Grid container item xs={12} md={5} spacing={1}>
+                {mobile && <Grid item xs={3} md={0}></Grid>}
+                <Grid item xs={6} md={6}>
                     <Card variant="outlined" className={classes.container}>
                         <CardContent>
                             <GoGear className={classes.icon} />
@@ -37,7 +38,9 @@ const Skillsgrid = () => {
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                {mobile && <Grid item xs={3} md={0}></Grid>}
+                {mobile && <Grid item xs={3} md={0}></Grid>}
+                <Grid item xs={6} md={6}>
                     <Card variant="outlined" className={classes.container}>
                         <CardContent>
                             <FaDatabase className={classes.icon} />
@@ -50,7 +53,10 @@ const Skillsgrid = () => {
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                {mobile && <Grid item xs={3} md={0}></Grid>}
+                {mobile && <Grid item xs={12}></Grid>}
+                {mobile && <Grid item xs={3} md={0}></Grid>}
+                <Grid item xs={6} md={6}>
                     <Card variant="outlined" className={classes.container2}>
                         <CardContent>
                             <AiOutlineAntDesign className={classes.icon} />
@@ -63,7 +69,9 @@ const Skillsgrid = () => {
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                {mobile && <Grid item xs={3} md={0}></Grid>}
+                {mobile && <Grid item xs={3} md={0}></Grid>}
+                <Grid item xs={6} md={6}>
                     <Card variant="outlined" className={classes.container2}>
                         <CardContent>
                             <GiSkills className={classes.icon} />
@@ -76,10 +84,13 @@ const Skillsgrid = () => {
                         </CardContent>
                     </Card>
                 </Grid>
+                {mobile && <Grid item xs={3} md={0}></Grid>}
             </Grid>
-            <Grid item xs={12} sm={5}>
-                <SkillBar  skills={skills} colors={colors} />
+            {mobile && <Grid item xs={1} md={0}></Grid>}
+            <Grid item xs={10} md={5}>
+                <SkillBar skills={skills} colors={colors} />
             </Grid>
+            {mobile && <Grid item xs={1} md={0}></Grid>}
             <Grid item xs={1}></Grid>
             <Grid item xs={12}></Grid>
         </Grid>
