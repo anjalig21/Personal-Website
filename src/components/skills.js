@@ -6,10 +6,15 @@ import { FaDatabase } from 'react-icons/fa';
 import { AiOutlineAntDesign } from 'react-icons/ai';
 import { GiSkills } from 'react-icons/gi';
 import SkillBar from 'react-skillbars';
+import { useMediaQuery } from '@material-ui/core';
 import {useStyles, skills, colors} from './styles.js'
 
 const Skillsgrid = () => {
     const classes = useStyles();
+
+    const desktop = useMediaQuery('(min-width: 1100px)');
+    const mobile = useMediaQuery('(max-width: 1100px)');
+
     return (
         <Grid className="mainGrid" container spacing={6}>
             <Grid item xs={12}>
@@ -18,8 +23,8 @@ const Skillsgrid = () => {
                 <p className="mainContent">- Technical & Design -</p>
             </Grid>
             <Grid item xs={1}></Grid>
-            <Grid container item xs={5} spacing={1}>
-                <Grid item xs={6}>
+            <Grid container item xs={12} sm={5} spacing={1}>
+                <Grid item xs={11} sm={6}>
                     <Card variant="outlined" className={classes.container}>
                         <CardContent>
                             <GoGear className={classes.icon} />
@@ -32,7 +37,7 @@ const Skillsgrid = () => {
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} sm={6}>
                     <Card variant="outlined" className={classes.container}>
                         <CardContent>
                             <FaDatabase className={classes.icon} />
@@ -45,7 +50,7 @@ const Skillsgrid = () => {
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} sm={6}>
                     <Card variant="outlined" className={classes.container2}>
                         <CardContent>
                             <AiOutlineAntDesign className={classes.icon} />
@@ -58,7 +63,7 @@ const Skillsgrid = () => {
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} sm={6}>
                     <Card variant="outlined" className={classes.container2}>
                         <CardContent>
                             <GiSkills className={classes.icon} />
@@ -72,7 +77,7 @@ const Skillsgrid = () => {
                     </Card>
                 </Grid>
             </Grid>
-            <Grid item xs={5}>
+            <Grid item xs={12} sm={5}>
                 <SkillBar  skills={skills} colors={colors} />
             </Grid>
             <Grid item xs={1}></Grid>

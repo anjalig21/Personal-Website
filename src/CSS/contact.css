@@ -60,7 +60,7 @@
   
   .button {
     background-color: #175fca;
-    margin: auto;
+    align-self: center;
     font-size: 120%;
     outline: none;
     color: #ffffff;

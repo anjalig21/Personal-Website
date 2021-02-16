@@ -16,10 +16,11 @@ const Banner = () => {
     return (
         <Grid container className="header">
             <Grid item xs={1}></Grid>
-            <Grid item xs={5}>
+            <Grid item xs={12} sm={5}>
                 <br />
                 <div className="header__content">
                     <div className="header__section">
+                    <br></br>
                         <ul className="header__ul">
                             <li className="Button">
                                 <FaGithub />
@@ -63,8 +64,8 @@ const Banner = () => {
                     </div>
                 </div>
             </Grid>
-            <Grid item xs={6}>
-                <br /><br /><br /><br /><br />
+            <Grid item xs={0} sm={6}>
+                <br /><br /><br /><br /><br /><br />
                 <div className="banner__img">
                     <img src={my_photo} alt="photo of me" />
                 </div>

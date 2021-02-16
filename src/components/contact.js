@@ -34,10 +34,6 @@ const Contact = () => {
                 <Grid item xs={4}>
                     <br />
                     <h1 className="mainHeaderProjectsContact">Contact Me</h1>
-                </Grid>
-                <Grid item xs={4}></Grid>
-                <Grid item xs={4}></Grid>
-                <Grid item xs={4}>
                     <p className="mainContentProjectsContact">- Let's Connect! -</p>
                     <br />
                 </Grid>

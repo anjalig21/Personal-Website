@@ -42,6 +42,13 @@ export const useStyles = makeStyles((theme) => ({
     popover: {
         pointerEvents: 'none',
     },
+    tabs: {
+        fontSize: "140%",
+        color: "#FFFFFF",
+        '&:hover': {
+            color: "#2f7196"
+        }
+    },
 }));
 
 export const skills = [
