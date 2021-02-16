@@ -6,21 +6,23 @@ import Typewriter from 'typewriter-effect';
 
 // File Imports
 import my_photo from '../images/me.png';
-import { Grid } from '@material-ui/core';
+import { Grid, useMediaQuery } from '@material-ui/core';
 
 const Banner = () => {
     const [state] = React.useState({
         title: "Anjali Gupta", text1: "Hello! My name is,", text2: "And I am a"
     })
 
+    const desktop = useMediaQuery('(min-width: 960px)');
+
     return (
         <Grid container className="header">
             <Grid item xs={1}></Grid>
-            <Grid item xs={12} sm={5}>
+            <Grid item xs={11} sm={5}>
                 <br />
                 <div className="header__content">
                     <div className="header__section">
-                    <br></br>
+                        <br></br>
                         <ul className="header__ul">
                             <li className="Button">
                                 <FaGithub />
@@ -45,7 +47,7 @@ const Banner = () => {
                             <div className="typewriter">
                                 <Typewriter
                                     options={{
-                                        strings: ['Developer', 'Technology Enthusiast', 'Designer'],
+                                        strings: ['Developer', 'Leader', 'Designer'],
                                         autoStart: true,
                                         loop: true,
                                     }}
@@ -64,12 +66,14 @@ const Banner = () => {
                     </div>
                 </div>
             </Grid>
-            <Grid item xs={0} sm={6}>
-                <br /><br /><br /><br /><br /><br />
-                <div className="banner__img">
-                    <img src={my_photo} alt="photo of me" />
-                </div>
-            </Grid>
+            {desktop && <>
+                <Grid item sm={6}>
+                    <br /><br /><br /><br /><br /><br />
+                    <div className="banner__img">
+                        <img src={my_photo} alt="photo of me" />
+                    </div>
+                </Grid>
+            </>}
         </Grid>
     )
 }
