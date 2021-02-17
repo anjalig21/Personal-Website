@@ -31,7 +31,7 @@ const Projects = () => {
             setGrow(true);
         }, 500);
     }
-    const changeStateLeft2 = (event, newValue) => {
+    const changeStateLeftOne = (event, newValue) => {
         const negativeChange = (((state - 1) % 6) + 6) % 6;
         setGrow(false);
         setTimeout(() => {
@@ -39,7 +39,7 @@ const Projects = () => {
             setGrow(true);
         }, 500);
     }
-    const changeStateRight2 = (event, newValue) => {
+    const changeStateRightOne = (event, newValue) => {
         setGrow(false);
         setTimeout(() => {
             setState((state + 1) % 6);
@@ -87,7 +87,7 @@ const Projects = () => {
                                 <ImgMediaCard
                                     demo={webcamPainter}
                                     demoTitle={"Webcam Painter"}
-                                    demoDetails={"Made with OpenCV."}
+                                    demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
                                     gitHub={"https://github.com/anjalig21/Webcam-Painter"}
                                 />
                             }
@@ -115,7 +115,7 @@ const Projects = () => {
                                 <ImgMediaCard
                                     demo={webcamPainter}
                                     demoTitle={"Webcam Painter"}
-                                    demoDetails={"Made with OpenCV."}
+                                    demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
                                     gitHub={"https://github.com/anjalig21/Webcam-Painter"}
                                 />
                             }
@@ -135,7 +135,7 @@ const Projects = () => {
                                 <ImgMediaCard
                                     demo={webcamPainter}
                                     demoTitle={"Webcam Painter"}
-                                    demoDetails={"Made with OpenCV."}
+                                    demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
                                     gitHub={"https://github.com/anjalig21/Webcam-Painter"}
                                 />
                             }
@@ -143,7 +143,7 @@ const Projects = () => {
                                 <ImgMediaCard
                                     demo={webcamPainter}
                                     demoTitle={"Webcam Painter"}
-                                    demoDetails={"Made with OpenCV."}
+                                    demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
                                     gitHub={"https://github.com/anjalig21/Webcam-Painter"}
                                 />
                             }
@@ -164,7 +164,7 @@ const Projects = () => {
                 <Grid item container xs={1} direction={'column'}>
                     <Grid item xs={5}></Grid>
                     <Grid item xs={2}>
-                        <IconButton onClick={changeStateLeft2} className="buttonArrow" color="primary" aria-label="arrow left">
+                        <IconButton onClick={changeStateLeftOne} className="buttonArrow" color="primary" aria-label="arrow left">
                             <BsChevronLeft />
                         </IconButton>
                     </Grid>
@@ -232,7 +232,7 @@ const Projects = () => {
                 <Grid item container xs={1} direction={'column'}>
                     <Grid item xs={5}></Grid>
                     <Grid item xs={2}>
-                        <IconButton onClick={changeStateRight2} className="buttonArrow" color="primary" aria-label="arrow right">
+                        <IconButton onClick={changeStateRightOne} className="buttonArrow" color="primary" aria-label="arrow right">
                             <BsChevronRight />
                         </IconButton>
                     </Grid>

@@ -5,9 +5,6 @@ import { db } from "../firebase/firebaseConfig";
 
 const Contact = () => {
 
-    const desktop = useMediaQuery('(min-width: 960px)');
-    const mobile = useMediaQuery('(max-width: 960px)');
-
     const [name, setName] = React.useState("");
     const [email, setEmail] = React.useState("");
     const [message, setMessage] = React.useState("");
@@ -33,15 +30,11 @@ const Contact = () => {
 
     return (
         <Grid id="contact" className="contact" container direction={'row'}>
-            <Grid item container xs={12}>
-                <Grid item xs={4}></Grid>
-                <Grid item xs={4}>
-                    <br />
-                    <h1 className="mainHeaderProjectsContact">Contact</h1>
-                    {desktop && <p className="mainContentProjectsContact">- Let's Connect! -</p>}
-                    {mobile && <p className="mainContentProjectsContact">- Let's Connect! -</p>}
-                    <br />
-                </Grid>
+            <Grid item xs={12}>
+                &nbsp;
+                <h1 className="mainHeaderProjectsContact">Contact Me</h1>
+                <p className="mainContentProjectsContact">- Let's Connect -</p>
+                &nbsp;
             </Grid>
             <Grid item xs={4}></Grid>
             <Grid item xs={4}>
@@ -78,7 +71,7 @@ const Contact = () => {
                 </form>
                 <br></br>
             </Grid>
-        </Grid>
+        </Grid >
     )
 }
 
