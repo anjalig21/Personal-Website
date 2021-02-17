@@ -1,6 +1,6 @@
 import React from 'react';
 import '../CSS/banner.css';
-import { FaGithub, FaLinkedin, FaLightbulb, FaYoutube } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { IoDocumentText } from "react-icons/io5";
 import Typewriter from 'typewriter-effect';
 import { Link } from 'react-scroll';
@@ -26,17 +26,17 @@ const Banner = () => {
                         <br></br>
                         <ul className="header__ul">
                             <li>
-                                <a smooth={true} duration={1000} className="Button" href="https://github.com/anjalig21" target="_blank">
+                                <a smooth={true} duration={1000} className="Button" rel="noreferrer" href="https://github.com/anjalig21" target="_blank">
                                     <FaGithub />
                                 </a>
                             </li>
                             <li>
-                                <a smooth={true} duration={1000} className="Button" href="https://www.linkedin.com/in/anjali-gupta21/" target="_blank">
+                                <a smooth={true} duration={1000} className="Button" rel="noreferrer" href="https://www.linkedin.com/in/anjali-gupta21/" target="_blank">
                                     <FaLinkedin />
                                 </a>
                             </li>
                             <li>
-                                <a smooth={true} duration={1000} className="Button" href="https://www.youtube.com/channel/UC4D7JjZ4xrp-OWjl3h05Q6A" target="_blank">
+                                <a smooth={true} duration={1000} className="Button" rel="noreferrer" href="https://www.youtube.com/channel/UC4D7JjZ4xrp-OWjl3h05Q6A" target="_blank">
                                     <FaYoutube />
                                 </a>
                             </li>
@@ -71,7 +71,7 @@ const Banner = () => {
             {desktop && <>
                 <Grid item sm={6}>
                     <br /><br /><br /><br /><br /><br />
-                    <img className="banner__img" src={my_photo} alt="photo of me" />
+                    <img className="banner__img" src={my_photo} alt="anjali gupta" />
                 </Grid>
             </>}
         </Grid>

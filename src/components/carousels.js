@@ -37,7 +37,7 @@ const ImgMediaCard = (props) => {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-            <a className = "gitHub" target="_blank" href={gitHub}>
+            <a className = "gitHub" rel="noreferrer" target="_blank" href={gitHub}>
                 <Button size="small" color="primary">View Source Code</Button>
             </a>
             </CardActions>

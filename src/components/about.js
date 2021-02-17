@@ -19,14 +19,14 @@ const About = () => {
             </Grid>
             {mobile && <Grid item xs={3}></Grid>}
             {mobile && <Grid item xs={6}>
-                <img className="photoMeMobile" src={photoMe} alt = "anjali gupta"/>
+                <img className="photoMeMobile" src={photoMe} alt="anjali gupta" />
             </Grid>
             }
             {mobile && <Grid item xs={3}></Grid>}
             {desktop && <Grid item xs={1}></Grid>}
             {desktop &&
                 <Grid item xs={5}>
-                    <img className="photoMe" src={photoMe} alt = "anjali gupta" />
+                    <img className="photoMe" src={photoMe} alt="anjali gupta" />
                 </Grid>
             }
             {desktop &&
@@ -44,7 +44,7 @@ const About = () => {
                     internships for Fall 2021.
                 </p>
                     <div className="format"></div>
-                    <a target="_blank" href= { Resume } className="btn-resume">
+                    <a rel="noreferrer" target="_blank" href={Resume} className="btn-resume">
                         Resume
                 </a>
                 </Grid>
@@ -65,12 +65,12 @@ const About = () => {
                     internships for Fall 2021.
                 </p>
                     <div className="format"></div>
-                    <a href="" className="btn-resume2">
+                    <a rel="noreferrer" target="_blank" href={Resume} className="btn-resume">
                         Resume
-                </a>
+                    </a>
                 </Grid>
                 <Grid item xs={2} />
-                </>
+            </>
             }
             <Grid item xs={1} />
             <Grid item xs={12}>
