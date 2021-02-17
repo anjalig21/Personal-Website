@@ -28,7 +28,7 @@ const Navbar = () => {
     navRef.current = background;
     React.useEffect(() => {
         const handleScroll = () => {
-            const show = window.scrollY > 1;
+            const show = window.scrollY > 0.1;
             if (show) {
                 setBackground('navbarSolid');
             } else {
