@@ -9,7 +9,7 @@ const About = () => {
     const mobile = useMediaQuery('(max-width: 1210px)');
 
     return (
-        <Grid className="about" container>
+        <Grid id="about" className="about" container>
             <Grid item xs={12}>
                 &nbsp;
                 <h1 className="mainHeaderProjectsAbout">About Me</h1>
@@ -18,14 +18,14 @@ const About = () => {
             </Grid>
             {mobile && <Grid item xs={3}></Grid>}
             {mobile && <Grid item xs={6}>
-                <img className="photoMeMobile" src={photoMe} />
+                <img className="photoMeMobile" src={photoMe} alt = "anjali gupta"/>
             </Grid>
             }
             {mobile && <Grid item xs={3}></Grid>}
             {desktop && <Grid item xs={1}></Grid>}
             {desktop &&
                 <Grid item xs={5}>
-                    <img className="photoMe" src={photoMe} />
+                    <img className="photoMe" src={photoMe} alt = "anjali gupta" />
                 </Grid>
             }
             {desktop &&

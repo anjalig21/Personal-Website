@@ -3,6 +3,7 @@ import '../CSS/navbar.css';
 import { HiMenu } from "react-icons/hi"
 import { useMediaQuery, IconButton, Drawer, List, Tab, Tabs } from '@material-ui/core';
 import { useStyles } from '../components/styles';
+import { Link } from 'react-scroll';
 
 // File Imports
 import my_logo from '../images/anjali.png';
@@ -34,11 +35,11 @@ const Navbar = () => {
                     </ul>
                     {desktop &&
                         <ul className="navbar__right">
-                            <li> <a className="headings" href="" >Home</a></li>
-                            <li> <a className="headings" href="" >Skills</a></li>
-                            <li> <a className="headings" href="" >Projects</a></li>
-                            <li> <a className="headings" href="" >About</a></li>
-                            <li> <a className="headings" href="" >Contact</a></li>
+                            <li> <Link smooth={true} duration={1000} className="headings" to="home">Home</Link></li>
+                            <li> <Link offset={-50} smooth={true} duration={1000} className="headings" to="skills">Skills</Link></li>
+                            <li> <Link offset={-60} smooth={true} duration={1000} className="headings" to="portfolio">Projects</Link></li>
+                            <li> <Link offset={-60} smooth={true} duration={1000} className="headings" to="about">About</Link></li>
+                            <li> <Link offset={-58} smooth={true} duration={1000} className="headings" to="contact">Contact</Link></li>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </ul>
                     }

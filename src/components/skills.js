@@ -16,7 +16,7 @@ const Skillsgrid = () => {
     const desktop = useMediaQuery('(min-width: 960px)');
 
     return (
-        <Grid className="mainGrid" container spacing={6}>
+        <Grid id="skills" className="mainGrid" container spacing={6}>
             <Grid item xs={12}>
                 &nbsp;
                 <h1 className="mainHeader">My Skills</h1>

@@ -17,6 +17,7 @@
     "react-multi-carousel": "^2.6.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
+    "react-scroll": "^1.8.1",
     "react-skillbars": "^1.6.1",
     "react-tsparticles": "^1.18.11",
     "typewriter-effect": "^2.17.0",

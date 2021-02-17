@@ -32,7 +32,7 @@ const Contact = () => {
     }
 
     return (
-        <Grid className="contact" container direction={'row'}>
+        <Grid id="contact" className="contact" container direction={'row'}>
             <Grid item container xs={12}>
                 <Grid item xs={4}></Grid>
                 <Grid item xs={4}>

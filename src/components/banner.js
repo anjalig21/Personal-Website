@@ -16,7 +16,7 @@ const Banner = () => {
     const desktop = useMediaQuery('(min-width: 960px)');
 
     return (
-        <Grid container className="header">
+        <Grid id="home" container className="header">
             <Grid item xs={1}></Grid>
             <Grid item xs={11} sm={5}>
                 <br />

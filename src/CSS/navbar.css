@@ -39,6 +39,7 @@
     -moz-transition:.3s;
     -webkit-transition:.3s;
     transition:.3s;
+    cursor: pointer;
   }
   
   .headings:hover {

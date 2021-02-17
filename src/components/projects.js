@@ -47,7 +47,7 @@ const Projects = () => {
         }, 500);
     }
     return (
-        <Grid className="projects" container direction={'row'} spacing={1}>
+        <Grid id="portfolio" className="projects" container direction={'row'} spacing={1}>
             <Grid item xs={12}>
                 &nbsp;
                 <h1 className="mainHeaderProjects">My Projects</h1>
@@ -160,10 +160,12 @@ const Projects = () => {
                         </IconButton>
                     </Grid>
                 </Grid>
-                <Grid item container xs={8} spacing={0}>
+                <Grid className = "cardsProjects" item container xs={8} spacing={0}>
                     <Grid item xs={2}></Grid>
                     <Grow in={grow}>
-                        <Grid className = "cardsProjects" item xs={8}>
+                        <Grid item container xs={8}>
+                        <Grid item xs={2}></Grid>
+                        <Grid item xs={10}>
                             {state === 0 &&
                                 <ImgMediaCard
                                     demo={tictactoe}
@@ -206,6 +208,8 @@ const Projects = () => {
                                     demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
                                 />
                             }
+                            </Grid>
+                            <Grid item xs={2}></Grid>
                         </Grid>
                     </Grow>
                     <Grid item xs={2}></Grid>
