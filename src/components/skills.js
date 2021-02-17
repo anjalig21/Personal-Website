@@ -91,7 +91,6 @@ const Skillsgrid = () => {
                 <SkillBar skills={skills} colors={colors} />
             </Grid>
             {mobile && <Grid item xs={1} md={0}></Grid>}
-            <Grid item xs={1}></Grid>
             <Grid item xs={12}></Grid>
         </Grid>
     )

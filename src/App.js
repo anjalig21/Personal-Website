@@ -8,13 +8,11 @@ import Projects from "./components/projects";
 import About from "./components/about";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
-import { Grid } from "@material-ui/core";
 
 
 function App() {
   return (
-    <Grid container>
-    
+    <div className="fix">
       <Navbar />
       <Particle />
       <Banner />
@@ -23,7 +21,7 @@ function App() {
       <About />
       <Contact />
       <Footer />
-    </Grid>
+    </div>
   );
 }
 

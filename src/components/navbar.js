@@ -39,11 +39,13 @@ const Navbar = () => {
                             <li> <a className="headings" href="" >Projects</a></li>
                             <li> <a className="headings" href="" >About</a></li>
                             <li> <a className="headings" href="" >Contact</a></li>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </ul>
                     }
                     {mobile && <>
                         <IconButton onClick={toggleDrawer('left', true)} aria-label="menu">
                             <HiMenu className="menu" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </IconButton>
                         <Drawer
                             variant='temporary'
@@ -68,8 +70,6 @@ const Navbar = () => {
                         </Drawer>
                     </>
                     }
-
-                    <div className="space"></div>
                 </div>
             </div>
         </navbar>

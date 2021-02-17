@@ -1,9 +1,13 @@
 import React from 'react'
 import "../CSS/contact.css"
-import { Grid } from '@material-ui/core';
+import { useMediaQuery, Grid } from '@material-ui/core';
 import { db } from "../firebase/firebaseConfig";
 
 const Contact = () => {
+
+    const desktop = useMediaQuery('(min-width: 960px)');
+    const mobile = useMediaQuery('(max-width: 960px)');
+
     const [name, setName] = React.useState("");
     const [email, setEmail] = React.useState("");
     const [message, setMessage] = React.useState("");
@@ -33,8 +37,9 @@ const Contact = () => {
                 <Grid item xs={4}></Grid>
                 <Grid item xs={4}>
                     <br />
-                    <h1 className="mainHeaderProjectsContact">Contact Me</h1>
-                    <p className="mainContentProjectsContact">- Let's Connect! -</p>
+                    <h1 className="mainHeaderProjectsContact">Contact</h1>
+                    {desktop && <p className="mainContentProjectsContact">- Let's Connect! -</p>}
+                    {mobile && <p className="mainContentProjectsContact">- Let's Connect! -</p>}
                     <br />
                 </Grid>
             </Grid>

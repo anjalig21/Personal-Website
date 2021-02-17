@@ -55,11 +55,11 @@ const Banner = () => {
                             </div>
                         </div>
                         <div className="header__buttons">
-                            <a href="" className="btn btn-portfolio">
+                            <a href="" className="btn">
                                 My Portfolio
                                     </a>
                                     &nbsp;&nbsp;&nbsp;
-                                    <a href="" className="btn btn-contact">
+                                    <a href="" className="btn">
                                 Contact Me
                                     </a>
                         </div>
@@ -69,9 +69,7 @@ const Banner = () => {
             {desktop && <>
                 <Grid item sm={6}>
                     <br /><br /><br /><br /><br /><br />
-                    <div className="banner__img">
-                        <img src={my_photo} alt="photo of me" />
-                    </div>
+                        <img className="banner__img" src={my_photo} alt="photo of me" />
                 </Grid>
             </>}
         </Grid>

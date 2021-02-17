@@ -79,6 +79,8 @@
     border: none;
     color:#FFFFFF;
     padding: 2% 4%;
+    border: 1px solid #FFFFFF;
+    border-radius: 23px;
     text-decoration: none;
     -o-transition:.3s;
     -ms-transition:.3s;
@@ -92,23 +94,8 @@
     color: #0644A3;
   }
   
-  .btn-portfolio {
-    border: 1px solid #FFFFFF;
-    border-radius: 23px;
-  }
-  
-  .btn-contact{
-    border: 1px solid #FFFFFF;
-    border-radius: 23px;
-  }
-  
-  .banner__img img{
-    padding: 0 0;
+  .banner__img{
     margin-left: 10%;
-    width: 75%;
-    height: 75%;
-  }
-  
-  .space {
-    margin-right: -35%;
+    width: 76%;
+    height: auto;
   }

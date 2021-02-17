@@ -1,5 +1,5 @@
 .projects {
-    background-color: #edf1fa;
+    background-color: #EDF1FA;
 }
 
 .mainHeaderProjects {
@@ -12,4 +12,9 @@
 .mainContentProjects {
     color:  #0644A3;
     text-align: center;
+}
+
+.cardsProjects {
+    margin-right: auto;
+    margin-left: auto;
 }
