@@ -1,8 +1,9 @@
 import React from 'react';
 import '../CSS/banner.css';
-import { FaGithub, FaLinkedin, FaLightbulb, FaBlog } from "react-icons/fa";
-import { BsFillPersonFill } from "react-icons/bs"
+import { FaGithub, FaLinkedin, FaLightbulb, FaYoutube } from "react-icons/fa";
+import { IoDocumentText } from "react-icons/io5";
 import Typewriter from 'typewriter-effect';
+import { Link } from 'react-scroll';
 
 // File Imports
 import my_photo from '../images/me.png';
@@ -24,20 +25,25 @@ const Banner = () => {
                     <div className="header__section">
                         <br></br>
                         <ul className="header__ul">
-                            <li className="Button">
-                                <FaGithub />
+                            <li>
+                                <a smooth={true} duration={1000} className="Button" href="https://github.com/anjalig21">
+                                    <FaGithub />
+                                </a>
                             </li>
-                            <li className="Button">
-                                <FaLinkedin />
+                            <li>
+                                <a smooth={true} duration={1000} className="Button" href="https://www.linkedin.com/in/anjali-gupta21/">
+                                    <FaLinkedin />
+                                </a>
                             </li>
-                            <li className="Button">
-                                <BsFillPersonFill />
+                            <li>
+                                <a smooth={true} duration={1000} className="Button" href="https://www.youtube.com/channel/UC4D7JjZ4xrp-OWjl3h05Q6A">
+                                    <FaYoutube />
+                                </a>
                             </li>
-                            <li className="Button">
-                                <FaLightbulb />
-                            </li>
-                            <li className="Button">
-                                <FaBlog />
+                            <li>
+                                <a smooth={true} duration={1000} className="Button" href="home">
+                                    <IoDocumentText />
+                                </a>
                             </li>
                         </ul>
                         <p className="para1"> {state.text1} </p>
@@ -55,13 +61,9 @@ const Banner = () => {
                             </div>
                         </div>
                         <div className="header__buttons">
-                            <a href="" className="btn">
-                                My Portfolio
-                                    </a>
+                            <Link offset={-58} smooth={true} duration={1000} className="btn" to="portfolio">My Portfolio</Link>
                                     &nbsp;&nbsp;&nbsp;
-                                    <a href="" className="btn">
-                                Contact Me
-                                    </a>
+                            <Link offset={-62} smooth={true} duration={1000} className="btn" to="contact">Contact Me</Link>
                         </div>
                     </div>
                 </div>
@@ -69,7 +71,7 @@ const Banner = () => {
             {desktop && <>
                 <Grid item sm={6}>
                     <br /><br /><br /><br /><br /><br />
-                        <img className="banner__img" src={my_photo} alt="photo of me" />
+                    <img className="banner__img" src={my_photo} alt="photo of me" />
                 </Grid>
             </>}
         </Grid>

@@ -17,12 +17,17 @@
     display: flex;
     margin-bottom: 20px;
   }
-  
+
   .header__ul li {
+    margin-left: 8%;
+  }
+  
+  .header__ul li a{
+    color: white;
     width: 40px;
     height: 40px;
     border: 1px solid #FFFFFF;
-    border-radius: 50%;
+    border-radius: 55%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +35,7 @@
   }
   
   .header__ul li:first-child {
-    margin-left: -11%;
+    margin-left: -10%;
   }
 
   .Button {
@@ -87,6 +92,7 @@
     -moz-transition:.3s;
     -webkit-transition:.3s;
     transition:.3s;
+    cursor: pointer;
   }
 
   .btn:hover{

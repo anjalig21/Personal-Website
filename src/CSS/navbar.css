@@ -51,3 +51,7 @@
     color: white;
     text-align: right;
   }
+
+  .my_logo {
+    cursor: pointer;
+  }

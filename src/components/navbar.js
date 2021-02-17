@@ -30,7 +30,9 @@ const Navbar = () => {
                     <ul className="navbar__left">
                         <div className="navbar__left-logo">
                             &nbsp;
-                            <img src={my_logo} alt="logo" />
+                                <Link smooth={true} duration={1000} className="headings" to="home">
+                                    <img className="my_logo" src={my_logo} alt="logo" />
+                                </Link>
                         </div>
                     </ul>
                     {desktop &&
@@ -39,7 +41,7 @@ const Navbar = () => {
                             <li> <Link offset={-50} smooth={true} duration={1000} className="headings" to="skills">Skills</Link></li>
                             <li> <Link offset={-60} smooth={true} duration={1000} className="headings" to="portfolio">Projects</Link></li>
                             <li> <Link offset={-60} smooth={true} duration={1000} className="headings" to="about">About</Link></li>
-                            <li> <Link offset={-58} smooth={true} duration={1000} className="headings" to="contact">Contact</Link></li>
+                            <li> <Link offset={-62} smooth={true} duration={1000} className="headings" to="contact">Contact</Link></li>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </ul>
                     }
@@ -61,10 +63,10 @@ const Navbar = () => {
                             >
                                 <List>
                                     <Tabs textColor="primary" orientation="vertical">
-                                        <Tab className = {classes.tabs} label="Home" />
-                                        <Tab className = {classes.tabs} label="Skills" />
-                                        <Tab className = {classes.tabs} label="Portfolio" />
-                                        <Tab className = {classes.tabs} label="Contact" />
+                                        <Tab className={classes.tabs} label="Home" />
+                                        <Tab className={classes.tabs} label="Skills" />
+                                        <Tab className={classes.tabs} label="Portfolio" />
+                                        <Tab className={classes.tabs} label="Contact" />
                                     </Tabs>
                                 </List>
                             </div>
