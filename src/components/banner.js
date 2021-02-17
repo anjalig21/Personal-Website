@@ -26,22 +26,22 @@ const Banner = () => {
                         <br></br>
                         <ul className="header__ul">
                             <li>
-                                <a smooth={true} duration={1000} className="Button" href="https://github.com/anjalig21">
+                                <a smooth={true} duration={1000} className="Button" href="https://github.com/anjalig21" target="_blank">
                                     <FaGithub />
                                 </a>
                             </li>
                             <li>
-                                <a smooth={true} duration={1000} className="Button" href="https://www.linkedin.com/in/anjali-gupta21/">
+                                <a smooth={true} duration={1000} className="Button" href="https://www.linkedin.com/in/anjali-gupta21/" target="_blank">
                                     <FaLinkedin />
                                 </a>
                             </li>
                             <li>
-                                <a smooth={true} duration={1000} className="Button" href="https://www.youtube.com/channel/UC4D7JjZ4xrp-OWjl3h05Q6A">
+                                <a smooth={true} duration={1000} className="Button" href="https://www.youtube.com/channel/UC4D7JjZ4xrp-OWjl3h05Q6A" target="_blank">
                                     <FaYoutube />
                                 </a>
                             </li>
                             <li>
-                                <a smooth={true} duration={1000} className="Button" href="home">
+                                <a smooth={true} duration={1000} className="Button" href="home" target="_blank">
                                     <IoDocumentText />
                                 </a>
                             </li>

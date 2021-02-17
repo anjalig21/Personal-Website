@@ -16,7 +16,7 @@ const useStyles = makeStyles({
 
 const ImgMediaCard = (props) => {
     const classes = useStyles();
-    const {demo, demoTitle, demoDetails} = props;
+    const {demo, demoTitle, demoDetails, gitHub} = props;
     return (
         <Card className={classes.root}>
             <CardActionArea>
@@ -37,9 +37,9 @@ const ImgMediaCard = (props) => {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary">
-                    View Source Code
-                        </Button>
+            <a className = "gitHub" target="_blank" href={gitHub}>
+                <Button size="small" color="primary">View Source Code</Button>
+            </a>
             </CardActions>
         </Card>
 

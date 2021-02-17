@@ -52,10 +52,10 @@ export const useStyles = makeStyles((theme) => ({
 }));
 
 export const skills = [
-    { type: "Python", level: 95 },
+    { type: "Javascript", level: 95 },
     { type: "HTML", level: 95 },
     { type: "CSS", level: 90 },
-    { type: "Javascript", level: 90 },
+    { type: "Python", level: 90 },
     { type: "SQL", level: 85 },
     { type: "C", level: 85 },
     { type: "C++", level: 80 },

@@ -2,6 +2,7 @@ import React from 'react';
 import '../CSS/about.css';
 import { Grid, useMediaQuery } from '@material-ui/core';
 import photoMe from '../images/me_again.png';
+import Resume from '../images/resume.pdf'
 
 const About = () => {
 
@@ -43,7 +44,7 @@ const About = () => {
                     internships for Fall 2021.
                 </p>
                     <div className="format"></div>
-                    <a href="" className="btn-resume">
+                    <a target="_blank" href= { Resume } className="btn-resume">
                         Resume
                 </a>
                 </Grid>

@@ -72,6 +72,7 @@ const Projects = () => {
                                     demo={tictactoe}
                                     demoTitle={"Tic Tac Toe"}
                                     demoDetails={"An unbeatable tic tac toe game created with the minimax algorithm."}
+                                    gitHub={"https://github.com/anjalig21/Unbeatable-Tic-Tac-Toe"}
                                 />
                             }
                             {state === 1 &&
@@ -79,6 +80,7 @@ const Projects = () => {
                                     demo={shapeDetect}
                                     demoTitle={"Shape Detection"}
                                     demoDetails={"Developed an application that can detect and identify shapes from an image."}
+                                    gitHub={"https://github.com/anjalig21/Shape-Detection"}
                                 />
                             }
                             {state === 2 &&
@@ -86,6 +88,7 @@ const Projects = () => {
                                     demo={webcamPainter}
                                     demoTitle={"Webcam Painter"}
                                     demoDetails={"Made with OpenCV."}
+                                    gitHub={"https://github.com/anjalig21/Webcam-Painter"}
                                 />
                             }
                         </Grid>
@@ -97,6 +100,7 @@ const Projects = () => {
                                     demo={photoBot}
                                     demoTitle={"Photo Bot"}
                                     demoDetails={"A multi-purpose Discord Bot curated towards gaming communities."}
+                                    gitHub={"https://github.com/anjalig21/Photo-Bot"}
                                 />
                             }
                             {state === 1 &&
@@ -104,6 +108,7 @@ const Projects = () => {
                                     demo={climateBots}
                                     demoTitle={"Climate Bots"}
                                     demoDetails={"A social networking platform for individuals to discuss climate change."}
+                                    gitHub={"https://github.com/anjalig21/Climate-Bots"}
                                 />
                             }
                             {state === 2 &&
@@ -111,6 +116,7 @@ const Projects = () => {
                                     demo={webcamPainter}
                                     demoTitle={"Webcam Painter"}
                                     demoDetails={"Made with OpenCV."}
+                                    gitHub={"https://github.com/anjalig21/Webcam-Painter"}
                                 />
                             }
                         </Grid>
@@ -122,6 +128,7 @@ const Projects = () => {
                                     demo={webcamPainter}
                                     demoTitle={"Webcam Painter"}
                                     demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
+                                    gitHub={"https://github.com/anjalig21/Webcam-Painter"}
                                 />
                             }
                             {state === 1 &&
@@ -129,6 +136,7 @@ const Projects = () => {
                                     demo={webcamPainter}
                                     demoTitle={"Webcam Painter"}
                                     demoDetails={"Made with OpenCV."}
+                                    gitHub={"https://github.com/anjalig21/Webcam-Painter"}
                                 />
                             }
                             {state === 2 &&
@@ -136,6 +144,7 @@ const Projects = () => {
                                     demo={webcamPainter}
                                     demoTitle={"Webcam Painter"}
                                     demoDetails={"Made with OpenCV."}
+                                    gitHub={"https://github.com/anjalig21/Webcam-Painter"}
                                 />
                             }
                         </Grid>
@@ -171,6 +180,7 @@ const Projects = () => {
                                     demo={tictactoe}
                                     demoTitle={"Tic Tac Toe"}
                                     demoDetails={"An unbeatable tic tac toe game created with the minimax algorithm."}
+                                    gitHub={"https://github.com/anjalig21/Unbeatable-Tic-Tac-Toe"}
                                 />
                             }
                             {state === 1 &&
@@ -178,6 +188,7 @@ const Projects = () => {
                                     demo={photoBot}
                                     demoTitle={"Photo Bot"}
                                     demoDetails={"A multi-purpose Discord Bot curated towards gaming communities."}
+                                    gitHub={"https://github.com/anjalig21/Photo-Bot"}
                                 />
                             }
                             {state === 2 &&
@@ -185,6 +196,7 @@ const Projects = () => {
                                     demo={webcamPainter}
                                     demoTitle={"Webcam Painter"}
                                     demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
+                                    gitHub={"https://github.com/anjalig21/Webcam-Painter"}
                                 />
                             }
                             {state === 3 &&
@@ -192,6 +204,7 @@ const Projects = () => {
                                     demo={shapeDetect}
                                     demoTitle={"Shape Detection"}
                                     demoDetails={"Developed an application that can detect and identify shapes from an image."}
+                                    gitHub={"https://github.com/anjalig21/Shape-Detection"}
                                 />
                             }
                             {state === 4 &&
@@ -199,6 +212,7 @@ const Projects = () => {
                                     demo={climateBots}
                                     demoTitle={"Climate Bots"}
                                     demoDetails={"A social networking platform for individuals to discuss climate change."}
+                                    gitHub={"https://github.com/anjalig21/Climate-Bots"}
                                 />
                             }
                             {state === 5 &&
@@ -206,6 +220,7 @@ const Projects = () => {
                                     demo={webcamPainter}
                                     demoTitle={"Webcam Painter"}
                                     demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
+                                    gitHub={"https://github.com/anjalig21/Webcam-Painter"}
                                 />
                             }
                             </Grid>
