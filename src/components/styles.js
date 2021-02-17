@@ -49,6 +49,25 @@ export const useStyles = makeStyles((theme) => ({
             color: "#2f7196"
         }
     },
+    navbarTransparent: {
+        transition: "0.5s",
+        width: "100%",
+        height: "11%",
+        top: "0",
+        position: "fixed",
+        background: "transparent",
+        zIndex: "1",
+        paddingTop: "0.5%",
+    },
+    navbarSolid: {
+        transition: "0.5s",
+        width: "100%",
+        height: "11%",
+        top: "0",
+        position: "fixed",
+        background: "rgba(0,0,0)",
+        zIndex: "1",
+    }
 }));
 
 export const skills = [

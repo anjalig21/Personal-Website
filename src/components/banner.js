@@ -19,7 +19,7 @@ const Banner = () => {
     return (
         <Grid id="home" container className="header">
             <Grid item xs={1}></Grid>
-            <Grid item xs={11} sm={5}>
+            <Grid item xs={11} md={5}>
                 <br />
                 <div className="header__content">
                     <div className="header__section">

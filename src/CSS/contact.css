@@ -74,6 +74,7 @@
     transition:.3s;
     border: 1px solid #0644A3;
     border-radius: 20px;
+    cursor: pointer;
   }
 
   .spacing {

@@ -23,22 +23,41 @@ const Navbar = () => {
         setState({ ...state, [anchor]: open });
     }
 
+    const [background, setBackground] = React.useState('navbarTransparent')
+    const navRef = React.useRef();
+    navRef.current = background;
+    React.useEffect(() => {
+        const handleScroll = () => {
+            const show = window.scrollY > 10;
+            if (show) {
+                setBackground('navbarSolid');
+            } else {
+                setBackground('navbarTransparent');
+            }
+        }
+        document.addEventListener('scroll', handleScroll);
+
+        return () => {
+            document.removeEventListener('scroll', handleScroll);
+        }
+    }, []);
+
     return (
-        <navbar className="navbar">
+        <navbar className={classes[navRef.current]}>
             <div className="container">
                 <div className="navbar__container">
                     <ul className="navbar__left">
                         <div className="navbar__left-logo">
                             &nbsp;
                                 <Link smooth={true} duration={1000} className="headings" to="home">
-                                    <img className="my_logo" src={my_logo} alt="logo" />
-                                </Link>
+                                <img className="my_logo" src={my_logo} alt="logo" />
+                            </Link>
                         </div>
                     </ul>
                     {desktop &&
                         <ul className="navbar__right">
                             <li> <Link smooth={true} duration={1000} className="headings" to="home">Home</Link></li>
-                            <li> <Link offset={-50} smooth={true} duration={1000} className="headings" to="skills">Skills</Link></li>
+                            <li> <Link offset={-60} smooth={true} duration={1000} className="headings" to="skills">Skills</Link></li>
                             <li> <Link offset={-60} smooth={true} duration={1000} className="headings" to="portfolio">Projects</Link></li>
                             <li> <Link offset={-60} smooth={true} duration={1000} className="headings" to="about">About</Link></li>
                             <li> <Link offset={-62} smooth={true} duration={1000} className="headings" to="contact">Contact</Link></li>
@@ -63,10 +82,21 @@ const Navbar = () => {
                             >
                                 <List>
                                     <Tabs textColor="primary" orientation="vertical">
-                                        <Tab className={classes.tabs} label="Home" />
-                                        <Tab className={classes.tabs} label="Skills" />
-                                        <Tab className={classes.tabs} label="Portfolio" />
-                                        <Tab className={classes.tabs} label="Contact" />
+                                        <Link onClick={toggleDrawer("left", false)} smooth={true} duration={1000} className="headings" to="home">
+                                            <Tab className={classes.tabs} label="Home" />
+                                        </Link>
+                                        <Link onClick={toggleDrawer("left", false)} offset={-50} smooth={true} duration={1000} className="headings" to="skills">
+                                            <Tab className={classes.tabs} label="Skills" />
+                                        </Link>
+                                        <Link onClick={toggleDrawer("left", false)} offset={-60} smooth={true} duration={1000} className="headings" to="portfolio">
+                                            <Tab className={classes.tabs} label="Portfolio" />
+                                        </Link>
+                                        <Link onClick={toggleDrawer("left", false)} offset={-60} smooth={true} duration={1000} className="headings" to="about">
+                                            <Tab className={classes.tabs} label="About" />
+                                        </Link>
+                                        <Link onClick={toggleDrawer("left", false)} offset={-62} smooth={true} duration={1000} className="headings" to="contact">
+                                            <Tab className={classes.tabs} label="Contact" />
+                                        </Link>
                                     </Tabs>
                                 </List>
                             </div>
