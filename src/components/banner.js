@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { IoDocumentText } from "react-icons/io5";
 import Typewriter from 'typewriter-effect';
 import { Link } from 'react-scroll';
+import Resume from '../images/resume.pdf'
 
 // File Imports
 import my_photo from '../images/me.png';
@@ -41,7 +42,7 @@ const Banner = () => {
                                 </a>
                             </li>
                             <li>
-                                <a smooth={true} duration={1000} className="Button" href="home" target="_blank">
+                                <a smooth={true} duration={1000} className="Button" href={Resume} target="_blank">
                                     <IoDocumentText />
                                 </a>
                             </li>
