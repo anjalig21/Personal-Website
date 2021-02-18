@@ -2,7 +2,7 @@ import React from 'react';
 import '../CSS/about.css';
 import { Grid, useMediaQuery } from '@material-ui/core';
 import photoMe from '../images/me_again.png';
-import Resume from '../images/resume.pdf'
+import Resume from '../images/resume.pdf';
 
 const About = () => {
 
@@ -19,7 +19,10 @@ const About = () => {
             </Grid>
             {mobile && <Grid item xs={3}></Grid>}
             {mobile && <Grid item xs={6}>
-                <img className="photoMeMobile" src={photoMe} alt="anjali gupta" />
+                <img 
+                className="photoMeMobile" 
+                src={photoMe}
+                alt="anjali gupta" />
             </Grid>
             }
             {mobile && <Grid item xs={3}></Grid>}

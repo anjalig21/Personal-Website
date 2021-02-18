@@ -1,6 +1,6 @@
 import React from 'react'
 import "../CSS/contact.css"
-import { useMediaQuery, Grid } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import { db } from "../firebase/firebaseConfig";
 
 const Contact = () => {

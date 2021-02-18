@@ -42,11 +42,11 @@ const Banner = () => {
                                 </a>
                             </li>
                             <li>
-                                <a smooth={true} duration={1000} className="Button" href={Resume} target="_blank">
+                                <a smooth={true} duration={1000} className="Button" rel="noreferrer" href={Resume} target="_blank">
                                     <IoDocumentText />
                                 </a>
                             </li>
-                        </ul>
+                        </ul> 
                         <p className="para1"> {state.text1} </p>
                         <h1 className="head1"> {state.title} </h1>
                         <div className="information">

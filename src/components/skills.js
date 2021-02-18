@@ -88,7 +88,7 @@ const Skillsgrid = () => {
             </Grid>
             {mobile && <Grid item xs={1} md={0}></Grid>}
             <Grid item xs={10} md={5}>
-                <SkillBar skills={skills} colors={colors} />
+                <SkillBar animationDelay="1000ms" skills={skills} colors={colors} />
             </Grid>
             {mobile && <Grid item xs={1} md={0}></Grid>}
             <Grid item xs={12}></Grid>
