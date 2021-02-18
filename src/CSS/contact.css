@@ -116,3 +116,9 @@
     color: #0644A3;
     cursor: pointer
   }
+
+  .spacing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

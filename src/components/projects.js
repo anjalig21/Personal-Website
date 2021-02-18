@@ -32,7 +32,7 @@ const Projects = () => {
         }, 500);
     }
     const changeStateLeftOne = (event, newValue) => {
-        const negativeChange = (((state - 1) % 6) + 6) % 6;
+        const negativeChange = (((state - 1) % 6) + 6) % 5;
         setGrow(false);
         setTimeout(() => {
             setState(negativeChange);
@@ -42,7 +42,7 @@ const Projects = () => {
     const changeStateRightOne = (event, newValue) => {
         setGrow(false);
         setTimeout(() => {
-            setState((state + 1) % 6);
+            setState((state + 1) % 5);
             setGrow(true);
         }, 500);
     }
@@ -50,192 +50,186 @@ const Projects = () => {
         <Grid id="portfolio" className="projects" container direction={'row'} spacing={1}>
             <Grid item xs={12}>
                 &nbsp;
-                <h1 className="mainHeaderProjects">My Projects</h1>
+                    <h1 className="mainHeaderProjects">My Projects</h1>
                 <p className="mainContentProjects">- Featured Projects -</p>
                 &nbsp;
             </Grid>
             <Grid item xs={1}></Grid>
             {desktop && <>
                 <Grid item container xs={1} direction={'column'}>
-                    <Grid item xs={5}></Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={5} direction={'row'}></Grid>
+                    <div className="spacingProject">
                         <IconButton onClick={changeStateLeft} className="buttonArrow" color="primary" aria-label="arrow left">
                             <BsChevronLeft />
                         </IconButton>
-                    </Grid>
+                    </div>
                 </Grid>
-                <Grid item container xs={8} spacing={0}>
+                <Grid item container xs={8} spacing={1} alignItems="center" justify="center">
                     <Grow in={grow}>
                         <Grid item xs={4}>
-                            {state === 0 &&
-                                <ImgMediaCard
-                                    demo={tictactoe}
-                                    demoTitle={"Tic Tac Toe"}
-                                    demoDetails={"An unbeatable tic tac toe game created with the minimax algorithm."}
-                                    gitHub={"https://github.com/anjalig21/Unbeatable-Tic-Tac-Toe"}
-                                />
-                            }
-                            {state === 1 &&
-                                <ImgMediaCard
-                                    demo={shapeDetect}
-                                    demoTitle={"Shape Detection"}
-                                    demoDetails={"Developed an application that can detect and identify shapes from an image."}
-                                    gitHub={"https://github.com/anjalig21/Shape-Detection"}
-                                />
-                            }
-                            {state === 2 &&
-                                <ImgMediaCard
-                                    demo={webcamPainter}
-                                    demoTitle={"Webcam Painter"}
-                                    demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
-                                    gitHub={"https://github.com/anjalig21/Webcam-Painter"}
-                                />
-                            }
+                            <div className="spacing">
+                                {state === 0 &&
+                                    <ImgMediaCard
+                                        demo={tictactoe}
+                                        demoTitle={"Tic Tac Toe"}
+                                        demoDetails={"An unbeatable tic tac toe game created with the minimax algorithm."}
+                                        gitHub={"https://github.com/anjalig21/Unbeatable-Tic-Tac-Toe"}
+                                    />
+                                }
+                                {state === 1 &&
+                                    <ImgMediaCard
+                                        demo={shapeDetect}
+                                        demoTitle={"Shape Detection"}
+                                        demoDetails={"Developed an application that can detect and identify shapes from an image."}
+                                        gitHub={"https://github.com/anjalig21/Shape-Detection"}
+                                    />
+                                }
+                                {state === 2 &&
+                                    <ImgMediaCard
+                                        demo={webcamPainter}
+                                        demoTitle={"Webcam Painter"}
+                                        demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
+                                        gitHub={"https://github.com/anjalig21/Webcam-Painter"}
+                                    />
+                                }
+                            </div>
                         </Grid>
                     </Grow>
                     <Grow in={grow}>
                         <Grid item xs={4}>
-                            {state === 0 &&
-                                <ImgMediaCard
-                                    demo={photoBot}
-                                    demoTitle={"Photo Bot"}
-                                    demoDetails={"A multi-purpose Discord Bot curated towards gaming communities."}
-                                    gitHub={"https://github.com/anjalig21/Photo-Bot"}
-                                />
-                            }
-                            {state === 1 &&
-                                <ImgMediaCard
-                                    demo={climateBots}
-                                    demoTitle={"Climate Bots"}
-                                    demoDetails={"A social networking platform for individuals to discuss climate change."}
-                                    gitHub={"https://github.com/anjalig21/Climate-Bots"}
-                                />
-                            }
-                            {state === 2 &&
-                                <ImgMediaCard
-                                    demo={webcamPainter}
-                                    demoTitle={"Webcam Painter"}
-                                    demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
-                                    gitHub={"https://github.com/anjalig21/Webcam-Painter"}
-                                />
-                            }
+                            <div className="spacing">
+                                {state === 0 &&
+                                    <ImgMediaCard
+                                        demo={photoBot}
+                                        demoTitle={"Photo Bot"}
+                                        demoDetails={"A multi-purpose Discord Bot curated towards gaming communities."}
+                                        gitHub={"https://github.com/anjalig21/Photo-Bot"}
+                                    />
+                                }
+                                {state === 1 &&
+                                    <ImgMediaCard
+                                        demo={climateBots}
+                                        demoTitle={"Climate Bots"}
+                                        demoDetails={"A social networking platform for individuals to discuss climate change."}
+                                        gitHub={"https://github.com/anjalig21/Climate-Bots"}
+                                    />
+                                }
+                                {state === 2 &&
+                                    <ImgMediaCard
+                                        demo={webcamPainter}
+                                        demoTitle={"Webcam Painter"}
+                                        demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
+                                        gitHub={"https://github.com/anjalig21/Webcam-Painter"}
+                                    />
+                                }
+                            </div>
                         </Grid>
                     </Grow>
                     <Grow in={grow}>
                         <Grid item xs={4}>
-                            {state === 0 &&
-                                <ImgMediaCard
-                                    demo={webcamPainter}
-                                    demoTitle={"Webcam Painter"}
-                                    demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
-                                    gitHub={"https://github.com/anjalig21/Webcam-Painter"}
-                                />
-                            }
-                            {state === 1 &&
-                                <ImgMediaCard
-                                    demo={webcamPainter}
-                                    demoTitle={"Webcam Painter"}
-                                    demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
-                                    gitHub={"https://github.com/anjalig21/Webcam-Painter"}
-                                />
-                            }
-                            {state === 2 &&
-                                <ImgMediaCard
-                                    demo={webcamPainter}
-                                    demoTitle={"Webcam Painter"}
-                                    demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
-                                    gitHub={"https://github.com/anjalig21/Webcam-Painter"}
-                                />
-                            }
+                            <div className="spacing">
+                                {state === 0 &&
+                                    <ImgMediaCard
+                                        demo={webcamPainter}
+                                        demoTitle={"Webcam Painter"}
+                                        demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
+                                        gitHub={"https://github.com/anjalig21/Webcam-Painter"}
+                                    />
+                                }
+                                {state === 1 &&
+                                    <ImgMediaCard
+                                        demo={webcamPainter}
+                                        demoTitle={"Webcam Painter"}
+                                        demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
+                                        gitHub={"https://github.com/anjalig21/Webcam-Painter"}
+                                    />
+                                }
+                                {state === 2 &&
+                                    <ImgMediaCard
+                                        demo={webcamPainter}
+                                        demoTitle={"Webcam Painter"}
+                                        demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
+                                        gitHub={"https://github.com/anjalig21/Webcam-Painter"}
+                                    />
+                                }
+                            </div>
                         </Grid>
                     </Grow>
                 </Grid>
                 <Grid item container xs={1} direction={'column'}>
-                    <Grid item xs={5}></Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={5} direction={'row'}></Grid>
+                    <div className="spacingProject">
                         <IconButton onClick={changeStateRight} className="buttonArrow" color="primary" aria-label="arrow right">
                             <BsChevronRight />
                         </IconButton>
-                    </Grid>
+                    </div>
                 </Grid>
             </>}
 
             {mobile && <>
                 <Grid item container xs={1} direction={'column'}>
-                    <Grid item xs={5}></Grid>
-                    <Grid item xs={2}>
+                    <div className="spacing">
                         <IconButton onClick={changeStateLeftOne} className="buttonArrow" color="primary" aria-label="arrow left">
                             <BsChevronLeft />
                         </IconButton>
-                    </Grid>
+                    </div>
                 </Grid>
-                <Grid className = "cardsProjects" item container xs={8} spacing={0}>
+                <Grid className="cardsProjects" item container xs={8} spacing={0}>
                     <Grid item xs={2}></Grid>
                     <Grow in={grow}>
-                        <Grid item container xs={8}>
-                        <Grid item xs={2}></Grid>
-                        <Grid item xs={10}>
-                            {state === 0 &&
-                                <ImgMediaCard
-                                    demo={tictactoe}
-                                    demoTitle={"Tic Tac Toe"}
-                                    demoDetails={"An unbeatable tic tac toe game created with the minimax algorithm."}
-                                    gitHub={"https://github.com/anjalig21/Unbeatable-Tic-Tac-Toe"}
-                                />
-                            }
-                            {state === 1 &&
-                                <ImgMediaCard
-                                    demo={photoBot}
-                                    demoTitle={"Photo Bot"}
-                                    demoDetails={"A multi-purpose Discord Bot curated towards gaming communities."}
-                                    gitHub={"https://github.com/anjalig21/Photo-Bot"}
-                                />
-                            }
-                            {state === 2 &&
-                                <ImgMediaCard
-                                    demo={webcamPainter}
-                                    demoTitle={"Webcam Painter"}
-                                    demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
-                                    gitHub={"https://github.com/anjalig21/Webcam-Painter"}
-                                />
-                            }
-                            {state === 3 &&
-                                <ImgMediaCard
-                                    demo={shapeDetect}
-                                    demoTitle={"Shape Detection"}
-                                    demoDetails={"Developed an application that can detect and identify shapes from an image."}
-                                    gitHub={"https://github.com/anjalig21/Shape-Detection"}
-                                />
-                            }
-                            {state === 4 &&
-                                <ImgMediaCard
-                                    demo={climateBots}
-                                    demoTitle={"Climate Bots"}
-                                    demoDetails={"A social networking platform for individuals to discuss climate change."}
-                                    gitHub={"https://github.com/anjalig21/Climate-Bots"}
-                                />
-                            }
-                            {state === 5 &&
-                                <ImgMediaCard
-                                    demo={webcamPainter}
-                                    demoTitle={"Webcam Painter"}
-                                    demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
-                                    gitHub={"https://github.com/anjalig21/Webcam-Painter"}
-                                />
-                            }
-                            </Grid>
-                            <Grid item xs={2}></Grid>
+                        <Grid item xs={8}>
+                            <div className="spacing">
+                                {state === 0 &&
+                                    <ImgMediaCard
+                                        demo={tictactoe}
+                                        demoTitle={"Tic Tac Toe"}
+                                        demoDetails={"An unbeatable tic tac toe game created with the minimax algorithm."}
+                                        gitHub={"https://github.com/anjalig21/Unbeatable-Tic-Tac-Toe"}
+                                    />
+                                }
+                                {state === 1 &&
+                                    <ImgMediaCard
+                                        demo={photoBot}
+                                        demoTitle={"Photo Bot"}
+                                        demoDetails={"A multi-purpose Discord Bot curated towards gaming communities."}
+                                        gitHub={"https://github.com/anjalig21/Photo-Bot"}
+                                    />
+                                }
+                                {state === 2 &&
+                                    <ImgMediaCard
+                                        demo={webcamPainter}
+                                        demoTitle={"Webcam Painter"}
+                                        demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
+                                        gitHub={"https://github.com/anjalig21/Webcam-Painter"}
+                                    />
+                                }
+                                {state === 3 &&
+                                    <ImgMediaCard
+                                        demo={shapeDetect}
+                                        demoTitle={"Shape Detection"}
+                                        demoDetails={"Developed an application that can detect and identify shapes from an image."}
+                                        gitHub={"https://github.com/anjalig21/Shape-Detection"}
+                                    />
+                                }
+                                {state === 4 &&
+                                    <ImgMediaCard
+                                        demo={climateBots}
+                                        demoTitle={"Climate Bots"}
+                                        demoDetails={"A social networking platform for individuals to discuss climate change."}
+                                        gitHub={"https://github.com/anjalig21/Climate-Bots"}
+                                    />
+                                }
+                            </div>
                         </Grid>
                     </Grow>
                     <Grid item xs={2}></Grid>
                 </Grid>
                 <Grid item container xs={1} direction={'column'}>
-                    <Grid item xs={5}></Grid>
-                    <Grid item xs={2}>
+                    <div className="spacing">
                         <IconButton onClick={changeStateRightOne} className="buttonArrow" color="primary" aria-label="arrow right">
                             <BsChevronRight />
                         </IconButton>
-                    </Grid>
+                    </div>
                 </Grid>
             </>}
 
