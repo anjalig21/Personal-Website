@@ -8,6 +8,7 @@ import photoBot from "../images/photobot.gif";
 import climateBots from "../images/climatebots.gif";
 import shapeDetect from "../images/shapes.gif";
 import tictactoe from "../images/tic-tac-toe.gif";
+import signLanguage from "../images/sign-language.gif"
 
 const Projects = () => {
 
@@ -17,7 +18,7 @@ const Projects = () => {
     const [state, setState] = React.useState(0);
     const [grow, setGrow] = React.useState(true);
     const changeStateLeft = (event, newValue) => {
-        const negativeChange = (((state - 1) % 3) + 3) % 3;
+        const negativeChange = (((state - 1) % 2) + 2) % 2;
         setGrow(false);
         setTimeout(() => {
             setState(negativeChange);
@@ -27,12 +28,12 @@ const Projects = () => {
     const changeStateRight = (event, newValue) => {
         setGrow(false);
         setTimeout(() => {
-            setState((state + 1) % 3);
+            setState((state + 1) % 2);
             setGrow(true);
         }, 500);
     }
     const changeStateLeftOne = (event, newValue) => {
-        const negativeChange = (((state - 1) % 6) + 6) % 5;
+        const negativeChange = (((state - 1) % 6) + 6) % 6;
         setGrow(false);
         setTimeout(() => {
             setState(negativeChange);
@@ -42,7 +43,7 @@ const Projects = () => {
     const changeStateRightOne = (event, newValue) => {
         setGrow(false);
         setTimeout(() => {
-            setState((state + 1) % 5);
+            setState((state + 1) % 6);
             setGrow(true);
         }, 500);
     }
@@ -70,21 +71,13 @@ const Projects = () => {
                             <div className="spacing">
                                 {state === 0 &&
                                     <ImgMediaCard
-                                        demo={tictactoe}
-                                        demoTitle={"Tic Tac Toe"}
-                                        demoDetails={"An unbeatable tic tac toe game created with the minimax algorithm."}
-                                        gitHub={"https://github.com/anjalig21/Unbeatable-Tic-Tac-Toe"}
+                                        demo={signLanguage}
+                                        demoTitle={"ASL Detector"}
+                                        demoDetails={"Trained a model to be able to identify the American Sign Language letters."}
+                                        gitHub={"https://github.com/anjalig21/Sign-Language-Detection"}
                                     />
                                 }
                                 {state === 1 &&
-                                    <ImgMediaCard
-                                        demo={shapeDetect}
-                                        demoTitle={"Shape Detection"}
-                                        demoDetails={"Developed an application that can detect and identify shapes from an image."}
-                                        gitHub={"https://github.com/anjalig21/Shape-Detection"}
-                                    />
-                                }
-                                {state === 2 &&
                                     <ImgMediaCard
                                         demo={webcamPainter}
                                         demoTitle={"Webcam Painter"}
@@ -114,14 +107,6 @@ const Projects = () => {
                                         gitHub={"https://github.com/anjalig21/Climate-Bots"}
                                     />
                                 }
-                                {state === 2 &&
-                                    <ImgMediaCard
-                                        demo={webcamPainter}
-                                        demoTitle={"Webcam Painter"}
-                                        demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
-                                        gitHub={"https://github.com/anjalig21/Webcam-Painter"}
-                                    />
-                                }
                             </div>
                         </Grid>
                     </Grow>
@@ -130,26 +115,18 @@ const Projects = () => {
                             <div className="spacing">
                                 {state === 0 &&
                                     <ImgMediaCard
-                                        demo={webcamPainter}
-                                        demoTitle={"Webcam Painter"}
-                                        demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
-                                        gitHub={"https://github.com/anjalig21/Webcam-Painter"}
+                                        demo={tictactoe}
+                                        demoTitle={"Tic Tac Toe"}
+                                        demoDetails={"An unbeatable tic tac toe game created with the minimax algorithm."}
+                                        gitHub={"https://github.com/anjalig21/Unbeatable-Tic-Tac-Toe"}
                                     />
                                 }
                                 {state === 1 &&
                                     <ImgMediaCard
-                                        demo={webcamPainter}
-                                        demoTitle={"Webcam Painter"}
-                                        demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
-                                        gitHub={"https://github.com/anjalig21/Webcam-Painter"}
-                                    />
-                                }
-                                {state === 2 &&
-                                    <ImgMediaCard
-                                        demo={webcamPainter}
-                                        demoTitle={"Webcam Painter"}
-                                        demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
-                                        gitHub={"https://github.com/anjalig21/Webcam-Painter"}
+                                        demo={shapeDetect}
+                                        demoTitle={"Shape Detection"}
+                                        demoDetails={"Developed an application that can detect and identify shapes from an image."}
+                                        gitHub={"https://github.com/anjalig21/Shape-Detection"}
                                     />
                                 }
                             </div>
@@ -181,13 +158,21 @@ const Projects = () => {
                             <div className="spacing">
                                 {state === 0 &&
                                     <ImgMediaCard
+                                        demo={signLanguage}
+                                        demoTitle={"ASL Detector"}
+                                        demoDetails={"Trained a model to be able to identify the American Sign Language letters."}
+                                        gitHub={"https://github.com/anjalig21/Sign-Language-Detection"}
+                                    />
+                                }
+                                {state === 1 &&
+                                    <ImgMediaCard
                                         demo={tictactoe}
                                         demoTitle={"Tic Tac Toe"}
                                         demoDetails={"An unbeatable tic tac toe game created with the minimax algorithm."}
                                         gitHub={"https://github.com/anjalig21/Unbeatable-Tic-Tac-Toe"}
                                     />
                                 }
-                                {state === 1 &&
+                                {state === 2 &&
                                     <ImgMediaCard
                                         demo={photoBot}
                                         demoTitle={"Photo Bot"}
@@ -195,20 +180,12 @@ const Projects = () => {
                                         gitHub={"https://github.com/anjalig21/Photo-Bot"}
                                     />
                                 }
-                                {state === 2 &&
+                                {state === 3 &&
                                     <ImgMediaCard
                                         demo={webcamPainter}
                                         demoTitle={"Webcam Painter"}
                                         demoDetails={"An application that allows users to draw infront a webcam while they wave certain colour objects."}
                                         gitHub={"https://github.com/anjalig21/Webcam-Painter"}
-                                    />
-                                }
-                                {state === 3 &&
-                                    <ImgMediaCard
-                                        demo={shapeDetect}
-                                        demoTitle={"Shape Detection"}
-                                        demoDetails={"Developed an application that can detect and identify shapes from an image."}
-                                        gitHub={"https://github.com/anjalig21/Shape-Detection"}
                                     />
                                 }
                                 {state === 4 &&
@@ -217,6 +194,14 @@ const Projects = () => {
                                         demoTitle={"Climate Bots"}
                                         demoDetails={"A social networking platform for individuals to discuss climate change."}
                                         gitHub={"https://github.com/anjalig21/Climate-Bots"}
+                                    />
+                                }
+                                {state === 5 &&
+                                    <ImgMediaCard
+                                        demo={shapeDetect}
+                                        demoTitle={"Shape Detection"}
+                                        demoDetails={"Developed an application that can detect and identify shapes from an image."}
+                                        gitHub={"https://github.com/anjalig21/Shape-Detection"}
                                     />
                                 }
                             </div>
