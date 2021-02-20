@@ -9,6 +9,7 @@ import climateBots from "../images/climatebots.gif";
 import shapeDetect from "../images/shapes.gif";
 import tictactoe from "../images/tic-tac-toe.gif";
 import signLanguage from "../images/sign-language.gif"
+import croppedASL from "../images/sign-language-final.gif"
 
 const Projects = () => {
 
@@ -158,7 +159,7 @@ const Projects = () => {
                             <div className="spacing">
                                 {state === 0 &&
                                     <ImgMediaCard
-                                        demo={signLanguage}
+                                        demo={croppedASL}
                                         demoTitle={"ASL Detector"}
                                         demoDetails={"Trained a model to be able to identify the American Sign Language letters."}
                                         gitHub={"https://github.com/anjalig21/Sign-Language-Detection"}
