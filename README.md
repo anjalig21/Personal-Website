@@ -8,3 +8,6 @@ This is my personal website in progress where I will showcase some of my project
 - CSS
 - JavaScript
 
+## Deployment
+You can check out the website here: https://anjali-personal-website-1ccaa.web.app/
+
