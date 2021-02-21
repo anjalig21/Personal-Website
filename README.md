@@ -15,5 +15,5 @@ You can check out the website here: [My Personal Website](https://personal-websi
 This is a carousel of my projects! I will keep updating this section as I make more projects to share!
 
 <p align="center">
-  <img src="src/images/projects.gif" alt="projects" width="500" height="200"/>
+  <img src="src/images/projects.gif" alt="projects" width="500" height="250"/>
 </p>
