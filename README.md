@@ -12,4 +12,6 @@ This is my personal website in progress where I will showcase some of my project
 You can check out the website here: https://personal-website-anjali.web.app/
 
 ## Notable Features
+This is a carousel of my projects! I will keep updating this section as I make more projects to share!
+![](src/images/projects.gif)
 
