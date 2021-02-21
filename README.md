@@ -14,5 +14,6 @@ You can check out the website here: [My Personal Website](https://personal-websi
 ## Notable Features
 This is a carousel of my projects! I will keep updating this section as I make more projects to share!
 
-![](src/images/projects.gif)
-
+<p align="center">
+  ![](src/images/projects.gif)
+</p>
