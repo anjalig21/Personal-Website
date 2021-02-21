@@ -11,7 +11,7 @@ Developed and designed my personal website that showcases some of my projects an
 - `JavaScript`
 
 ## Check It Out
-You can check out the website here: [My Personal Website](https://personal-website-anjali.web.app/)
+You can check out my website here: [My Personal Website](https://personal-website-anjali.web.app/)
 
 ## Notable Features
 
