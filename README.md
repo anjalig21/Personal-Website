@@ -1,5 +1,5 @@
 ## My Personal Website
-This is my personal website in progress where I will showcase some of my projects and more information about me!
+Developed and designed my personal website that showcases some of my projects and more information about me!
 
 ## Technologies Used
 - `Node.js 14.15.3`
@@ -11,7 +11,7 @@ This is my personal website in progress where I will showcase some of my project
 - `JavaScript`
 
 ## Check It Out
-You can check out the website here: [My Personal Website](https://personal-website-anjali.web.app/)
+You can check out my website here: [My Personal Website](https://personal-website-anjali.web.app/)
 
 ## Notable Features
 
