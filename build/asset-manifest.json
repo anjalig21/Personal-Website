@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.66045a41.chunk.css",
-    "main.js": "/static/js/main.d6e73c79.chunk.js",
-    "main.js.map": "/static/js/main.d6e73c79.chunk.js.map",
+    "main.js": "/static/js/main.228450e1.chunk.js",
+    "main.js.map": "/static/js/main.228450e1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3bcdd1ae.js",
     "runtime-main.js.map": "/static/js/runtime-main.3bcdd1ae.js.map",
-    "static/js/2.9b8dbf38.chunk.js": "/static/js/2.9b8dbf38.chunk.js",
-    "static/js/2.9b8dbf38.chunk.js.map": "/static/js/2.9b8dbf38.chunk.js.map",
+    "static/js/2.4daebf87.chunk.js": "/static/js/2.4daebf87.chunk.js",
+    "static/js/2.4daebf87.chunk.js.map": "/static/js/2.4daebf87.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.66045a41.chunk.css.map": "/static/css/main.66045a41.chunk.css.map",
-    "static/js/2.9b8dbf38.chunk.js.LICENSE.txt": "/static/js/2.9b8dbf38.chunk.js.LICENSE.txt",
+    "static/js/2.4daebf87.chunk.js.LICENSE.txt": "/static/js/2.4daebf87.chunk.js.LICENSE.txt",
     "static/media/climatebots.dde2e815.gif": "/static/media/climatebots.dde2e815.gif",
     "static/media/me.46b1b3b6.png": "/static/media/me.46b1b3b6.png",
     "static/media/me_again.336009f2.png": "/static/media/me_again.336009f2.png",
@@ -23,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.3bcdd1ae.js",
-    "static/js/2.9b8dbf38.chunk.js",
+    "static/js/2.4daebf87.chunk.js",
     "static/css/main.66045a41.chunk.css",
-    "static/js/main.d6e73c79.chunk.js"
+    "static/js/main.228450e1.chunk.js"
   ]
 }
