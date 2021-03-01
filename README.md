@@ -24,5 +24,3 @@ This is a carousel of my projects! I will keep updating this section as I make m
 
 ### Resume 
 You can also get a copy of my resume on my website on the Home Section or under the About Me section!
-
-
