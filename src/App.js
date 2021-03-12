@@ -1,22 +1,24 @@
-import React from "react";
-import './CSS/App.css';
-import Banner from "./components/banner";
-import Navbar from "./components/navbar";
-import Particle from "./components/particles";
-import Skills from "./components/skills";
-import Projects from "./components/projects";
-import About from "./components/about";
-import Contact from "./components/contact";
-import Footer from "./components/footer";
+//React/Material UI Libraries
+import React from 'react'
 
+//File Imports
+import Navbar from './Components/Navbar/Navbar'
+import Home from './Components/Home/Home'
+import About from './Components/About/About'
+import Skills from './Components/Skills/Skills'
+import Projects from './Components/Projects/Projects'
+import Contact from './Components/Contact/Contact'
+import Particle from './Components/Particles/Particles'
+import Footer from './Components/Footer/Footer'
+import './App.css'
 
-function App() {
-
+//App contains layout of the node website
+export default function App() {
   return (
-    <div className="fix">
+    <div>
       <Navbar />
       <Particle />
-      <Banner />
+      <Home />
       <Skills />
       <Projects />
       <About />
@@ -25,5 +27,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
