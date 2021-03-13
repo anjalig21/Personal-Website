@@ -2,12 +2,8 @@
 This is my personal website. It will act as a portfolio for all my projects and experiences when applying for jobs or to attract clients. Frontend is built using React and Material-UI. Backend is built using Node.js and Firebase. Hosting is done using Firebase.
 <br />
 
-## How to access
-1. Click this link: https://personal-website-70e2b.web.app/
-2. Enjoy!
-
-## My Personal Website
-Developed and designed my personal website that showcases some of my projects and more information about me!
+## Check It Out
+You can check out my website here: [My Personal Website](https://personal-website-anjali.web.app/)
 
 ## Technologies Used
 - `Node.js 14.15.3`
@@ -17,9 +13,6 @@ Developed and designed my personal website that showcases some of my projects an
 - `HTML`
 - `CSS`
 - `JavaScript`
-
-## Check It Out
-You can check out my website here: [My Personal Website](https://personal-website-anjali.web.app/)
 
 ## Notable Features
 
