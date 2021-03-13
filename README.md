@@ -5,7 +5,7 @@ This is my personal website. It will act as a portfolio for all my projects and 
 ## How to access
 1. Click this link: https://personal-website-70e2b.web.app/
 2. Enjoy!
-=======
+
 ## My Personal Website
 Developed and designed my personal website that showcases some of my projects and more information about me!
 
