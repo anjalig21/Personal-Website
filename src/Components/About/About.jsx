@@ -14,6 +14,7 @@ const About = () => {
 	// classes and queries
 	const classes = AboutStyles();
 	const md = useMediaQuery('(max-width: 960px)');
+	const lg = useMediaQuery('(min-width: 960px)');
 
 	return (
 		<Grid id="about" container>
@@ -21,7 +22,7 @@ const About = () => {
 			<Grid className={classes.title} item xs={12}>
 				<br />
 				<Typography variant="h2">About Me</Typography>
-				<Typography variant="h4">- Who am I? -</Typography>
+				<Typography variant="h4">- Get To Know Me -</Typography>
 				<br /><br />
 			</Grid>
 			<Grid item xs={1}></Grid>
@@ -54,6 +55,7 @@ const About = () => {
 				<br />
 
 				{/* Buttons */}
+				{lg && 
 				<a rel="noreferrer" target="_blank" href={Resume} className={classes.links}>
 					<div>
 						<Button variant="contained" size="large" className={classes.button} startIcon={<FaRegFilePdf />}>
@@ -61,6 +63,16 @@ const About = () => {
       					</Button>
 					</div>
 				</a>
+				}
+				{md && 
+				<a rel="noreferrer" target="_blank" href={Resume} className={classes.links}>
+					<div>
+						<Button variant="contained" size="large" className={classes.buttonMobile} startIcon={<FaRegFilePdf />}>
+							Resume
+      					</Button>
+					</div>
+				</a>
+				}
 			</Grid>
 			{md && <Grid item xs={1}></Grid>}
 

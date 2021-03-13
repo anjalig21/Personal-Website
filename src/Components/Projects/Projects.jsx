@@ -62,7 +62,7 @@ const Projects = () => {
 			<Grid className={classes.title} item xs={12}>
 				<br />
 				<Typography variant="h2">My Projects</Typography>
-				<Typography variant="h4">- What have I been working on? -</Typography>
+				<Typography variant="h4">- What I am working on -</Typography>
 			</Grid>
 
 			{sm2 && <Grid item xs={1}></Grid>}

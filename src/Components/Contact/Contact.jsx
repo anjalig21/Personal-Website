@@ -11,6 +11,9 @@ import { MdEmail } from 'react-icons/md'
 import { db } from "../../firebaseConfig";
 import ContactStyles from './ContactStyles'
 
+import{ init } from 'emailjs-com';
+init(process.env.REACT_APP_USER_ID);
+
 const Contact = () => {
 	// classes and queries
 	const classes = ContactStyles();
@@ -48,14 +51,14 @@ const Contact = () => {
 				setErrorMessage(true);
 			}
 		} else {
-			const emailObject = { // object to be sent to firebase and email
+			const firebaseObject = { // object to be sent to firebase and email
 				name: name,
 				email: email,
 				message: message
 			}
 
 			// send to firebase
-			db.collection('contacts').add(emailObject)
+			db.collection('contacts').add(firebaseObject)
 				.then(() => {
 					console.log('submitted to Firebase');
 				})
@@ -64,12 +67,19 @@ const Contact = () => {
 				});
 
 			// send to email
-			emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, emailObject, process.env.REACT_APP_USER_ID)
-				.then((result) => {
-					console.log(result.text);
-					alert('Message has been submitted 🚀');
-				}, (err) => {
-					console.log(err.text);
+			emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID,{
+				name: name,
+				email: email,
+				to_name: "",
+				from_name: "",
+				message: message,
+				})
+				.then((response) => {
+					alert('Message has been submitted!');
+					console.log(response);
+				})
+				.catch((err) => {
+					console.log(err);
 				});
 
 			setName('');
@@ -166,7 +176,7 @@ const Contact = () => {
 						<div className={classes.center}>
 							<Button type="submit" variant="contained" size="large" className={classes.button}>
 								Submit
-      				</Button>
+      						</Button>
 						</div>
 					</form>
 				</div>

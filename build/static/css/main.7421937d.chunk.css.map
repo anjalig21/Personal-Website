@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/Components/Particles/Particles.css"],"names":[],"mappings":"AAAA,aACC,iBAAkB,CAClB,UAAW,CACX,UAAW,CACX,WAAY,CACZ,qBAAsB,CACtB,2BACD","file":"main.7421937d.chunk.css","sourcesContent":["#tsparticles {\n\tposition: absolute;\n\tz-index: -1; \n\twidth: 100%;\n\theight: 100%;\n\tbackground-size: cover;\n\tbackground-position: 50% 50%;\n}"]}

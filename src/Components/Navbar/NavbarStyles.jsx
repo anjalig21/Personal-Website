@@ -34,7 +34,7 @@ const NavbarStyles = makeStyles((theme) => ({
         color: "#ffffff",
         '&:hover': {
             transition: "0.5s",
-            color: "#5481c4"
+            color: "#99bbff"
         }
     },
     drawerTabSpacing: {

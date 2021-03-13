@@ -44,6 +44,7 @@ const HomeStyles = makeStyles((theme) => ({
 		height: "auto",
 	},
 	ovalButton: {
+		textDecoration: "none",
 		borderRadius: 20,
 		borderColor: "#FFFFFF",
 		color: "#FFFFFF",

@@ -1,6 +1,6 @@
 // dependancies
 import React from 'react'
-import { Typography, Grid, IconButton, Button } from '@material-ui/core'
+import { Typography, Grid, IconButton, Button, useMediaQuery, Link } from '@material-ui/core'
 import Typewriter from "typewriter-effect"
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { IoDocumentText } from "react-icons/io5";
@@ -13,6 +13,8 @@ import HomeStyles from './HomeStyles'
 const Home = () => {
 	// css import
 	const classes = HomeStyles();
+	const desktop = useMediaQuery('(min-width: 960px)');
+	const mobile = useMediaQuery('(min-width: 380px)');
 
 	return (
 		<div id="home" className={classes.size}>
@@ -43,32 +45,38 @@ const Home = () => {
 							</a>
 							<br />
 							<br />
-							<div style={{paddingBottom: "2%"}}/>
+							<div style={{ paddingBottom: "2%" }} />
 							<Typography className={classes.titleText} variant="h3"><b>Hello there! My name is</b></Typography>
 							<br />
 							<Typography className={classes.titleText} variant="h1">Anjali Gupta</Typography>
 							<div className={classes.inline}>
-								<p style={{ display: "inline-block" }}><b>And I am a</b>&nbsp;</p>
-								<div style={{ display: "inline-block" }}>
-									<b>
-										<Typewriter
-											options={{
-												strings: ['Developer', 'Leader', 'Designer'],
-												autoStart: true,
-												loop: true,
-											}}
-										/>
-									</b>
-								</div>
+								{mobile && <p style={{ display: "inline-block" }}><b>And I am a</b>&nbsp;</p>}
+								{mobile &&
+									<div style={{ display: "inline-block" }}>
+										<b>
+											<Typewriter
+												options={{
+													strings: ['Developer', 'Leader', 'Designer'],
+													autoStart: true,
+													loop: true,
+												}}
+											/>
+										</b>
+									</div>
+								}
 								<br />
-								<Button className={classes.ovalButton} variant="outlined">Portfolio</Button>
-								<Button className={classes.ovalButton} variant="outlined">Contact</Button>
+								<Link style={{textDecoration:"none"}} smooth="true" duration={1000} offset={-30} to="projects">
+									<Button className={classes.ovalButton} variant="outlined">Portfolio</Button>
+								</Link>
+								<Link style={{textDecoration:"none"}} smooth="true" duration={1000} offset={-30} to="contact">
+									<Button className={classes.ovalButton} variant="outlined">Contact</Button>
+								</Link>
 							</div>
 						</div>
 					</div>
 				</Grid>
 				<Grid className={classes.photoContainer} item xs={5}>
-					<img src={photoMe} className={classes.photoMe} alt="anjali gupta" />
+					{desktop && <img src={photoMe} className={classes.photoMe} alt="anjali gupta" />}
 				</Grid>
 				<Grid item xs={1} />
 			</Grid>

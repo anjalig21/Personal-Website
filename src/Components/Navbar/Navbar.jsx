@@ -67,16 +67,16 @@ const Navbar = () => {
                             <Link smooth="true" duration={1000} to="home">
                                 <Tab className={classes.tabs} label="Home" />
                             </Link>
-                            <Link smooth="true" duration={1000} to="skills">
+                            <Link smooth="true" duration={1000} offset={-50} to="skills">
                                 <Tab className={classes.tabs} label="Skills" />
                             </Link>
-                            <Link smooth="true" duration={1000} offset={-80} to="projects">
+                            <Link smooth="true" duration={1000} offset={-70} to="projects">
                                 <Tab className={classes.tabs} label="Projects" />
                             </Link>
-                            <Link smooth="true" duration={1000} offset={-80} to="about">
+                            <Link smooth="true" duration={1000} offset={-70} to="about">
                                 <Tab className={classes.tabs} label="About" />
                             </Link>
-                            <Link smooth="true" duration={1000} offset={-80} to="contact">
+                            <Link smooth="true" duration={1000} offset={-70} to="contact">
                                 <Tab className={classes.tabs} label="Contact" />
                             </Link>
                         </Tabs>
@@ -99,22 +99,22 @@ const Navbar = () => {
                                             <Tab onClick={toggleDrawer("left", false)} className={classes.tabs} label="Home" />
                                         </div>
                                     </Link>
-                                    <Link smooth="true" duration={1000} to="skills">
+                                    <Link smooth="true" duration={1000} offset={-30} to="skills">
                                         <div className={classes.drawerTabSpacing}>
                                             <Tab onClick={toggleDrawer("left", false)} className={classes.tabs} label="Skills" />
                                         </div>
                                     </Link>
-                                    <Link smooth="true" duration={1000} offset={-70} to="projects">
+                                    <Link smooth="true" duration={1000} offset={-60} to="projects">
                                         <div className={classes.drawerTabSpacing}>
                                             <Tab onClick={toggleDrawer("left", false)} className={classes.tabs} label="Projects" />
                                         </div>
                                     </Link>
-                                    <Link smooth="true" duration={1000} offset={-70} to="about">
+                                    <Link smooth="true" duration={1000} offset={-60} to="about">
                                         <div className={classes.drawerTabSpacing}>
                                             <Tab onClick={toggleDrawer("left", false)} className={classes.tabs} label="About" />
                                         </div>
                                     </Link>
-                                    <Link smooth="true" duration={1000} offset={-70} to="contact">
+                                    <Link smooth="true" duration={1000} offset={-60} to="contact">
                                         <div className={classes.drawerTabSpacing}>
                                             <Tab onClick={toggleDrawer("left", false)} className={classes.tabs} label="Contact" />
                                         </div>

@@ -39,6 +39,21 @@ const AboutStyles = makeStyles((theme) => ({
 		marginRight: "2%",
 		textTransform: "none",
 		width: "30%",
+		height: "auto",
+		"&:hover": {
+			transition: "0.3s",
+			color: "#000000",
+			backgroundColor: "#EDF1FA",
+		}
+	},
+	buttonMobile: {
+		backgroundColor: theme.palette.secondary.dark,
+		borderRadius: 20,
+		color: "#ffffff",
+		marginRight: "2%",
+		textTransform: "none",
+		width: "42%",
+		height: "auto",
 		"&:hover": {
 			transition: "0.3s",
 			color: "#000000",
