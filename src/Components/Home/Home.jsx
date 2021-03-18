@@ -1,6 +1,7 @@
 // dependancies
 import React from 'react'
-import { Typography, Grid, IconButton, Button, useMediaQuery, Link } from '@material-ui/core'
+import { Typography, Grid, IconButton, Button, useMediaQuery} from '@material-ui/core'
+import { Link } from 'react-scroll'
 import Typewriter from "typewriter-effect"
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { IoDocumentText } from "react-icons/io5";
@@ -65,10 +66,10 @@ const Home = () => {
 									</div>
 								}
 								<br />
-								<Link style={{textDecoration:"none"}} smooth="true" duration={1000} offset={-30} to="projects">
+								<Link style={{textDecoration:"none"}} smooth="true" duration={1000} offset={-70} to="projects">
 									<Button className={classes.ovalButton} variant="outlined">Portfolio</Button>
 								</Link>
-								<Link style={{textDecoration:"none"}} smooth="true" duration={1000} offset={-30} to="contact">
+								<Link style={{textDecoration:"none"}} smooth="true" duration={1000} offset={-70} to="contact">
 									<Button className={classes.ovalButton} variant="outlined">Contact</Button>
 								</Link>
 							</div>

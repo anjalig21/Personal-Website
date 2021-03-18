@@ -106,6 +106,8 @@ const Skillsgrid = () => {
             <br />
             <br />
             <br />
+            <br />
+            <br />
         </Grid>
     )
 }
