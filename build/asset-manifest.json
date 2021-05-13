@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.7421937d.chunk.css",
-    "main.js": "/static/js/main.2020f222.chunk.js",
-    "main.js.map": "/static/js/main.2020f222.chunk.js.map",
+    "main.js": "/static/js/main.5fb306e3.chunk.js",
+    "main.js.map": "/static/js/main.5fb306e3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3bcdd1ae.js",
     "runtime-main.js.map": "/static/js/runtime-main.3bcdd1ae.js.map",
     "static/js/2.54b104fc.chunk.js": "/static/js/2.54b104fc.chunk.js",
@@ -15,10 +15,9 @@
     "static/media/climatebots.dde2e815.gif": "/static/media/climatebots.dde2e815.gif",
     "static/media/me_again.336009f2.png": "/static/media/me_again.336009f2.png",
     "static/media/photobot.7116af08.gif": "/static/media/photobot.7116af08.gif",
-    "static/media/purplePurlers.96fdef3c.gif": "/static/media/purplePurlers.96fdef3c.gif",
-    "static/media/resume.464a3523.pdf": "/static/media/resume.464a3523.pdf",
-    "static/media/shapes.127b0570.gif": "/static/media/shapes.127b0570.gif",
+    "static/media/resume.dad468ff.pdf": "/static/media/resume.dad468ff.pdf",
     "static/media/sign-language.f9cfa1de.gif": "/static/media/sign-language.f9cfa1de.gif",
+    "static/media/stocksportfolio.01bb9896.gif": "/static/media/stocksportfolio.01bb9896.gif",
     "static/media/tic-tac-toe.c9a2ae37.gif": "/static/media/tic-tac-toe.c9a2ae37.gif",
     "static/media/webcam_painter.8ab78496.gif": "/static/media/webcam_painter.8ab78496.gif"
   },
@@ -26,6 +25,6 @@
     "static/js/runtime-main.3bcdd1ae.js",
     "static/js/2.54b104fc.chunk.js",
     "static/css/main.7421937d.chunk.css",
-    "static/js/main.2020f222.chunk.js"
+    "static/js/main.5fb306e3.chunk.js"
   ]
 }

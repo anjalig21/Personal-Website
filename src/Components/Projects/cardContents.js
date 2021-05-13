@@ -1,12 +1,28 @@
 import webcamPainter from "./Images/webcam_painter.gif";
 import photoBot from "./Images/photobot.gif";
 import climateBots from "./Images/climatebots.gif";
-import shapeDetect from "./Images/shapes.gif";
+import stocksPortfolio from "./Images/stocksportfolio.gif";
 import tictactoe from "./Images/tic-tac-toe.gif";
-import signLanguage from "./Images/sign-language.gif"
-import purplePurlers from "./Images/purplePurlers.gif"
+import signLanguage from "./Images/sign-language.gif";
+import purplePurlers from "./Images/purplePurlers.gif";
+import theShoppies from "./Images/theshoppiess.gif";
+import shapes from "./Images/shapes.gif";
 
 export const cardContents = [
+	{
+		header: theShoppies,
+		title: "The Shoppies",
+		details: "Built an application that allows users to nominate their favourite movies through the OMDB API.",
+		source: "https://github.com/anjalig21/The-Shoppies",
+		website: "https://theshopifyshoppies.web.app/"
+	},
+	{
+		header: stocksPortfolio,
+		title: "Stocks Portfolio",
+		details: "Developed an application that allows users to manage their personal stock portfolios.",
+		source: "https://github.com/anjalig21/Stocks-Portfolio",
+		website: "https://stocks-portfolio-cd830.web.app/"
+	},
 	{
 		header: signLanguage,
 		title: "ASL Detector",
@@ -39,18 +55,17 @@ export const cardContents = [
 		source: "https://github.com/anjalig21/Climate-Bots"
 	},
 	{
-		header: shapeDetect,
+		header: shapes,
 		title: "Shape Detection",
 		details: "Developed an application that can detect and identify shapes from an image.",
 		source: "https://github.com/anjalig21/Shape-Detection"
 	},
-	// {
-	// 	header: purplePurlers,
-	// 	title: "Purple Purlers",
-	// 	details: `Charity that collects blankets from the community to donate to animal shelters accross the GTA.
-	// 						To date, 1200+ blankets and over $6000 have been raised.`,
-	// 	website: "https://sites.google.com/view/purple-purlers"
-	// },
+	{
+		header: purplePurlers,
+		title: "Purple Purlers",
+		details: `Founded a charity that collects blankets to donate to animal shelters accross the GTA.`,
+		website: "https://sites.google.com/view/purple-purlers"
+	},
 ];
 
 // init for populating split arrays
