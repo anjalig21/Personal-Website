@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.7421937d.chunk.css",
-    "main.js": "/static/js/main.eaa23b83.chunk.js",
-    "main.js.map": "/static/js/main.eaa23b83.chunk.js.map",
+    "main.js": "/static/js/main.39134496.chunk.js",
+    "main.js.map": "/static/js/main.39134496.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3bcdd1ae.js",
     "runtime-main.js.map": "/static/js/runtime-main.3bcdd1ae.js.map",
-    "static/js/2.54b104fc.chunk.js": "/static/js/2.54b104fc.chunk.js",
-    "static/js/2.54b104fc.chunk.js.map": "/static/js/2.54b104fc.chunk.js.map",
+    "static/js/2.4b8e8eb2.chunk.js": "/static/js/2.4b8e8eb2.chunk.js",
+    "static/js/2.4b8e8eb2.chunk.js.map": "/static/js/2.4b8e8eb2.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.7421937d.chunk.css.map": "/static/css/main.7421937d.chunk.css.map",
-    "static/js/2.54b104fc.chunk.js.LICENSE.txt": "/static/js/2.54b104fc.chunk.js.LICENSE.txt",
+    "static/js/2.4b8e8eb2.chunk.js.LICENSE.txt": "/static/js/2.4b8e8eb2.chunk.js.LICENSE.txt",
     "static/media/AnjaliLogo.00b5fced.png": "/static/media/AnjaliLogo.00b5fced.png",
     "static/media/anj.45223ac3.png": "/static/media/anj.45223ac3.png",
     "static/media/climatebots.dde2e815.gif": "/static/media/climatebots.dde2e815.gif",
@@ -26,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.3bcdd1ae.js",
-    "static/js/2.54b104fc.chunk.js",
+    "static/js/2.4b8e8eb2.chunk.js",
     "static/css/main.7421937d.chunk.css",
-    "static/js/main.eaa23b83.chunk.js"
+    "static/js/main.39134496.chunk.js"
   ]
 }
