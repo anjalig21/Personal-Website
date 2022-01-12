@@ -5,6 +5,9 @@ export const useStyles = makeStyles((theme) => ({
 		textAlign: "center",
 		color: theme.palette.secondary.dark
 	},
+    background: {
+        backgroundColor: "white"
+    },
     cards:{
         paddingRight: "2%"
     },

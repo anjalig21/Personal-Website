@@ -14,6 +14,7 @@ const Skillsgrid = () => {
     const desktop = useMediaQuery('(min-width: 960px)');
 
     return (
+        <div className={classes.background}>
         <Grid id="skills" className="mainGrid" container>
             <Grid className={classes.title} item xs={12}>
                 <br />
@@ -109,6 +110,7 @@ const Skillsgrid = () => {
             <br />
             <br />
         </Grid>
+        </div>
     )
 }
 export default Skillsgrid

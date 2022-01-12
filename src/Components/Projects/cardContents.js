@@ -7,6 +7,7 @@ import signLanguage from "./Images/sign-language.gif";
 import purplePurlers from "./Images/purplePurlers.gif";
 import theShoppies from "./Images/theshoppiess.gif";
 import shapes from "./Images/shapes.gif";
+import sort from "./Images/sort.gif";
 
 export const cardContents = [
 	{
@@ -17,11 +18,10 @@ export const cardContents = [
 		website: "https://theshopifyshoppies.web.app/"
 	},
 	{
-		header: stocksPortfolio,
-		title: "Stocks Portfolio",
-		details: "Developed an application that allows users to manage their personal stock portfolios.",
-		source: "https://github.com/anjalig21/Stocks-Portfolio",
-		website: "https://stocks-portfolio-cd830.web.app/"
+		header: sort,
+		title: "Sorting Visualizer",
+		details: "Automated the visualization of various sorting algorithms in Python.",
+		source: "https://github.com/anjalig21/Sorting-Visualizer",
 	},
 	{
 		header: signLanguage,
@@ -40,6 +40,13 @@ export const cardContents = [
 		title: "Webcam Painter",
 		details: "An application that allows users to draw infront a webcam while they wave certain colour objects.",
 		source: "https://github.com/anjalig21/Webcam-Painter",
+	},
+	{
+		header: stocksPortfolio,
+		title: "Stocks Portfolio",
+		details: "Developed an application that allows users to manage their personal stock portfolios.",
+		source: "https://github.com/anjalig21/Stocks-Portfolio",
+		website: "https://stocks-portfolio-cd830.web.app/"
 	},
 	{
 		header: tictactoe,

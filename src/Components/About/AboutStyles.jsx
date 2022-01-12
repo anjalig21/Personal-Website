@@ -5,6 +5,9 @@ const AboutStyles = makeStyles((theme) => ({
 		textAlign: "center",
 		color: theme.palette.secondary.dark
 	},
+	background: {
+		backgroundColor: "white"
+	},
 	subTitle: {
     fontWeight: "600"
 	},
