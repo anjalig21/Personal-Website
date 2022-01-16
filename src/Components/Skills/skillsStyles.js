@@ -55,8 +55,8 @@ export const skills = [
     { type: "CSS", level: 95 },
     { type: "Python", level: 95 },
     { type: "SQL", level: 95 },
-    { type: "C", level:  90 },
-    { type: "C#", level: 90 },
+    { type: "C++", level:  90 },
+    { type: "Dart", level: 90 },
     { type: "Racket", level: 90 }
 ];
 

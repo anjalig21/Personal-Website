@@ -75,8 +75,9 @@ const About = () => {
             websites for various businesses. These projects showcase my love of
             coding and design. Previously, I have worked on various web
             development projects and tutored many kids on computer science and
-            math. Some on my hobbies are playing sports, Graphic Designing and
-            exploring various AI and ML algorithms. I also help out in the
+            math. Some on my hobbies are playing sports, learning foreign 
+            languages, exploring various AI and ML algorithms, and of
+            course eating sushi! I also help out in the
             community by volunteering and knitting blankets for animal shelters!{" "}
             <b> Currently, I am seeking internships for Summer 2022.</b>
           </Typography>
