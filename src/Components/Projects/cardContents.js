@@ -4,7 +4,7 @@ import climateBots from "./Images/climatebots.gif";
 import stocksPortfolio from "./Images/stocksportfolio.gif";
 import tictactoe from "./Images/tic-tac-toe.gif";
 import signLanguage from "./Images/sign-language.gif";
-import purplePurlers from "./Images/purplePurlers.gif";
+// import purplePurlers from "./Images/purplePurlers.gif";
 import theShoppies from "./Images/theshoppiess.gif";
 import shapes from "./Images/shapes.gif";
 import sort from "./Images/sort.gif";
@@ -67,12 +67,12 @@ export const cardContents = [
 		details: "Developed an application that can detect and identify shapes from an image.",
 		source: "https://github.com/anjalig21/Shape-Detection"
 	},
-	{
-		header: purplePurlers,
-		title: "Purple Purlers",
-		details: `Founded a charity that collects blankets to donate to animal shelters accross the GTA.`,
-		website: "https://sites.google.com/view/purple-purlers"
-	},
+	// {
+	// 	header: purplePurlers,
+	// 	title: "Purple Purlers",
+	// 	details: `Founded a charity that collects blankets to donate to animal shelters accross the GTA.`,
+	// 	website: "https://sites.google.com/view/purple-purlers"
+	// },
 ];
 
 // init for populating split arrays
