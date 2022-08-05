@@ -35,7 +35,7 @@ const Skillsgrid = () => {
                                 Technologies
                         </Typography>
                             <Typography className={classes.body}>
-                                I am proficient with using TensorFlow, NumPy, Django, Node.js, React.js, and SQLite!
+                                I am proficient with using Firebase, Postman, Flutter, PostgreSQL, and MongoDB.
                         </Typography>
                         </CardContent>
                     </Card>
@@ -50,7 +50,7 @@ const Skillsgrid = () => {
                                 Tools
                         </Typography>
                             <Typography className={classes.body}>
-                                I am fluent with using VS Code, Material-UI, GitHub, Git, PythonAnywhere and Netlify!
+                                I am fluent with using VS Code, Material-UI, GitHub, Git, Heroku, BitBucket, and Jira!
                         </Typography>
                         </CardContent>
                     </Card>

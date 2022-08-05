@@ -70,16 +70,16 @@ const About = () => {
           </Typography>
           <div style={{ paddingBottom: "2%" }} />
           <Typography variant="body1">
-            Currently, I am working on several projects which include
-            programming a Sign-Language Detector and building e-commerce
-            websites for various businesses. These projects showcase my love of
-            coding and design. Previously, I have worked on various web
-            development projects and tutored many kids on computer science and
-            math. Some on my hobbies are playing sports, learning foreign 
-            languages, exploring various AI and ML algorithms, and of
-            course eating sushi! I also help out in the
+            To date, my software-related experience includes two internships and a 
+            contract part-time position, where I had the opportunity to learn many
+            different tech stacks. For more information on my experiences, see my
+            resume below! I also enjoy working on several projects in my
+            spare time. Currently, I am working on programming a Sign-Language Detector 
+            and building e-commerce websites for various businesses. Some on my hobbies are 
+            playing sports, learning foreign languages, exploring various AI and ML 
+            algorithms, and of course eating sushi! I also help out in the
             community by volunteering and knitting blankets for animal shelters!{" "}
-            <b> Currently, I am seeking internships for Summer 2022.</b>
+            <b> Currently, I am seeking internships for Winter 2023.</b>
           </Typography>
           <br />
           <Divider />

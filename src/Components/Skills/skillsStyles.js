@@ -50,14 +50,14 @@ export const useStyles = makeStyles((theme) => ({
 }));
 
 export const skills = [
-    { type: "Javascript", level: 95 },
-    { type: "HTML", level: 95 },
-    { type: "CSS", level: 95 },
     { type: "Python", level: 95 },
-    { type: "SQL", level: 95 },
-    { type: "C++", level:  90 },
-    { type: "Dart", level: 90 },
-    { type: "Racket", level: 90 }
+    { type: "C++", level:  95 },
+    { type: "JavaScript", level: 90 },
+    { type: "TypeScript", level: 90 },
+    { type: "Dart", level: 85 },
+    { type: "SQL", level: 85 },
+    { type: "HTML", level: 80 },
+    { type: "CSS", level: 80 }
 ];
 
 export const colors = {
