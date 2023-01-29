@@ -79,7 +79,7 @@ const About = () => {
             playing sports, learning foreign languages, exploring various AI and ML 
             algorithms, and of course eating sushi! I also help out in the
             community by volunteering and knitting blankets for animal shelters!{" "}
-            <b> Currently, I am seeking internships for Winter 2023.</b>
+            <b> Currently, I am seeking internships for Summer 2024.</b>
           </Typography>
           <br />
           <Divider />
