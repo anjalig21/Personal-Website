@@ -70,7 +70,7 @@ const About = () => {
           </Typography>
           <div style={{ paddingBottom: "2%" }} />
           <Typography variant="body1">
-            To date, my software-related experience includes two internships and a 
+            To date, my software-related experience includes four internships and a 
             contract part-time position, where I had the opportunity to learn many
             different tech stacks. For more information on my experiences, see my
             resume below! I also enjoy working on several projects in my
